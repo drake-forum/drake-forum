@@ -3,7 +3,7 @@
 🧠 Computer Science Student at IPS Academy IES<br/>
 💥 Web Developer By Passion<br/>
 🖋️ I create themed & Parallax Web pages<br/>
-🪲 Here is More about me [Portfolio](https://drakefolio.nelify.app)
+🪲 Here is More about me [Portfolio](https://drakefolio.netlify.app/)
 
 
 ## 🌐 Socials:
