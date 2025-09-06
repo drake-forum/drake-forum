@@ -1,25 +1,81 @@
-## Hi, I'm Drake
+<!-- Profile Banner / Cover -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3500&pause=1000&color=C0C0C0&vCenter=true&width=700&lines=Hey%2C+I'm+Drake+forum!;Web+Developer+%7C+CS+Student+%7C+Themed+UI+Creator;Building+Parallax+Experiences+%F0%9F%AA%B2" alt="Typing SVG" />
+</p>
 
-🧠 Computer Science Student at IPS Academy IES<br/>
-💥 Web Developer By Passion<br/>
-🖋️ I create themed & Parallax Web pages<br/>
-🪲 Here is More about me [Portfolio](https://drakefolio.netlify.app/)
+---
 
+### 👋 About Me
+- 🎓 **Computer Science Student** @ IPS Academy IES, Indore, India
+- 💥 *Passionate Web Developer & Tech Artist*
+- 🎨 Crafting **themed, parallax, and interactive web pages**
+- ⚡️ *I experiment with UI, motion graphics, and creative coding*
+- 🪲 [My Portfolio](https://drakefolio.netlify.app/) • [Resume](#)
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/drake.forum) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/devansh-chaturvedi-b42a76317) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/drake_forum) 
+---
 
-# 💻 Tech Stack:
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=plastic&logo=css3&logoColor=white) ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=plastic&logo=rust&logoColor=white) ![Swift](https://img.shields.io/badge/swift-F54A2A?style=plastic&logo=swift&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=plastic&logo=typescript&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=plastic&logo=netlify&logoColor=#00C7B7) ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=plastic&logo=heroku&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=plastic&logo=firebase) ![Web3.js](https://img.shields.io/badge/web3.js-F16822?style=plastic&logo=web3.js&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=plastic&logo=next.js&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=plastic&logo=npm&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=plastic&logo=Flutter&logoColor=white) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=plastic&logo=apache&logoColor=white) ![AmazonDynamoDB](https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=plastic&logo=Amazon%20DynamoDB&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=plastic&logo=mongodb&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=plastic&logo=supabase&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=plastic&logo=firebase&logoColor=ffcd34) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=plastic&logo=mysql&logoColor=white) ![Adobe](https://img.shields.io/badge/adobe-%23FF0000.svg?style=plastic&logo=adobe&logoColor=white) ![Adobe After Effects](https://img.shields.io/badge/Adobe%20After%20Effects-9999FF.svg?style=plastic&logo=Adobe%20After%20Effects&logoColor=white) ![Blender](https://img.shields.io/badge/blender-%23F5792A.svg?style=plastic&logo=blender&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=plastic&logo=Canva&logoColor=white) ![Proto.io](https://img.shields.io/badge/Proto.io-161637?style=plastic&logo=proto.io&logoColor=00e5ff) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=plastic&logo=figma&logoColor=white) ![Framer](https://img.shields.io/badge/Framer-black?style=plastic&logo=framer&logoColor=blue) ![Adobe Premiere Pro](https://img.shields.io/badge/Adobe%20Premiere%20Pro-9999FF.svg?style=plastic&logo=Adobe%20Premiere%20Pro&logoColor=white) ![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=plastic&logo=adobe%20photoshop&logoColor=white) ![Adobe Lightroom](https://img.shields.io/badge/Adobe%20Lightroom-31A8FF.svg?style=plastic&logo=Adobe%20Lightroom&logoColor=white) ![Adobe Illustrator](https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=plastic&logo=adobe%20illustrator&logoColor=white) ![Ubisoft](https://img.shields.io/badge/Ubisoft-%23F5F5F5.svg?style=plastic&logo=Ubisoft&logoColor=black) ![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=plastic&logo=steam&logoColor=white) ![nVIDIA](https://img.shields.io/badge/nVIDIA-%2376B900.svg?style=plastic&logo=nVIDIA&logoColor=white) ![Riot Games](https://img.shields.io/badge/riotgames-D32936.svg?style=plastic&logo=riotgames&logoColor=white) ![Epic Games](https://img.shields.io/badge/epicgames-%23313131.svg?style=plastic&logo=epicgames&logoColor=white) ![Plex](https://img.shields.io/badge/plex-%23E5A00D.svg?style=plastic&logo=plex&logoColor=white) ![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=plastic&logo=firefox&logoColor=#FF7139) ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=plastic&logo=notion&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=drake-forum&theme=one_dark_pro&hide_border=false&include_all_commits=false&count_private=false&layout=compact)<br/>
-![](https://github-readme-stats.vercel.app/api?username=drake-forum&theme=one_dark_pro&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=drake-forum&theme=one_dark_pro&hide_border=false)<br/>
+### 🛠️ Tech Stack
 
-### ✍️ Influencial Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+<!-- Tech & Design Skill Icons -->
+<p align="center">
+  <img 
+    src="https://skillicons.dev/icons?i=js,ts,css,html,rust,swift,react,nextjs,flutter,figma,blender,mysql,mongodb,netlify,heroku,firebase,adobephotoshop,ae,pr,ai,lightroom,framer,canva,protoio,web3js,npm,supabase" 
+    alt="Tech Stack and Tool Icons" 
+    width="100%" 
+  />
+</p>
 
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=drake-forum&limit=5&theme=dark&combine_all_yearly_contributions=true)
+---
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+### 🌐 Connect with Me
+<p align="center">
+  <a href="https://instagram.com/drake.forum"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white"></a>
+  <a href="https://linkedin.com/in/devansh-chaturvedi-b42a76317"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white"></a>
+  <a href="https://x.com/drake_forum"><img alt="X" src="https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white"></a>
+  <a href="https://drakefolio.netlify.app/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-000000?style=flat&logo=firefox&logoColor=#FF7139"></a>
+  <a href="https://www.notion.so/"><img alt="Notion" src="https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white"></a>
+</p>
+
+---
+
+### 📈 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=drake-forum&theme=one_dark_pro&show_icons=true&hide_border=true&count_private=true" height="130"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=drake-forum&theme=one_dark_pro&hide_border=true&layout=compact" height="130"/>
+  <img src="https://nirzak-streak-stats.vercel.app/?user=drake-forum&theme=one_dark_pro&hide_border=true" height="130" />
+</p>
+
+---
+
+### 🚀 Featured Projects
+
+| Project | Description | Live Demo | Tech |
+| ------- | ----------- | --------- | ---- |
+| **Drakefolio** | Personal portfolio site, themed UI & parallax effects | [🌐](https://drakefolio.netlify.app/) | Next.js, Framer, Netlify |
+| **Quiz Platform** | Host local multi-device quizzes | [🌐 Soon]() | JS, Firebase |
+| **SVG Artworks** | Techy SVG icons & animations | [🌐 Soon]() | SVG, CSS |
+
+---
+
+### 📣 Quote That Inspires Me
+<p align="center"><img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical"/></p>
+
+---
+
+<details>
+<summary>🔝 Top Contributed Repos</summary>
+<p align="center">
+  <img src="https://github-contributor-stats.vercel.app/api?username=drake-forum&limit=5&theme=dark&combine_all_yearly_contributions=true"/>
+</p>
+</details>
+
+---
+
+<!-- Trophy Showcase -->
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=drake-forum&theme=minimal&no-frame=true&no-bg=true&column=5&margin-w=15" alt="GitHub Trophy"/>
+</p>
+<!--
+Proudly created with GPRM ( https://gprm.itsvg.in )
+-->
