@@ -71,6 +71,8 @@
 </details>
 
 ---
+![snake gif](https://github.com/drake-forum/drake-forum/blob/output/github-snake-dark.svg)
+---
 
 <!-- Trophy Showcase -->
 <p align="center">
