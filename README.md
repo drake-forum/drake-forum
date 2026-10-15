@@ -18,11 +18,9 @@ A year of full-stack training at Technical Hub taught me to carry an idea from i
 
 Java is my primary language and Python is where my ML work lives. I care about systems that hold up: payments that settle in exactly one state, tenants that never see each other's data, and AI whose answers can be checked against the source.
 
-| &nbsp; | &nbsp; |
-| :-- | :-- |
-| 🎓 **Studying** | B.Tech, AI & ML, Aditya Engineering College (2023 – present) |
-| 🛠️ **Trained** | Full-Stack Development Trainee, Technical Hub Pvt Ltd (May 2025 – Jun 2026) |
-| 🔭 **Drawn to** | System design, cloud computing (AWS), machine learning |
+- 🎓 **Studying**: B.Tech, AI & ML, Aditya Engineering College (2023 – present)
+- 🛠️ **Trained**: Full-Stack Development Trainee, Technical Hub Pvt Ltd (May 2025 – Jun 2026)
+- 🔭 **Drawn to**: System design, cloud computing (AWS), machine learning
 
 <img src="assets/section-divider.svg" width="100%" alt="">
 

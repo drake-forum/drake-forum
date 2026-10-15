@@ -8,15 +8,6 @@
         "/Users/sushmitadasari/Documents/GitHub/Sushmitadasari/scripts/serve.mjs"
       ],
       "port": 4173
-    },
-    {
-      "name": "readme-preview",
-      "runtimeExecutable": "node",
-      "runtimeArgs": [
-        "/private/tmp/claude-501/-Users-sushmitadasari-Documents-GitHub-Sushmitadasari/fa96c857-51eb-4026-b1e0-92ba4542c46f/scratchpad/serve-preview.mjs",
-        "/private/tmp/claude-501/-Users-sushmitadasari-Documents-GitHub-Sushmitadasari/fa96c857-51eb-4026-b1e0-92ba4542c46f/scratchpad/preview"
-      ],
-      "port": 4180
     }
   ]
 }

@@ -43,50 +43,50 @@
   </g>
 
   <!-- Row 1 -->
-  <g class="tc-panel tc-p1" transform="translate(32 32)">
+  <g class="tc-panel tc-p1"><g transform="translate(32 32)">
     <rect width="360" height="200" rx="14" fill="#190B12" fill-opacity=".85" stroke="#C77B9B" stroke-opacity=".22"/>
     <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#C77B9B">01  LANGUAGES</text>
     <text class="tc-serif" x="24" y="96" font-size="40" font-weight="300" fill="#F8F0F3">Java <tspan font-size="13" class="tc-mono" fill="#C77B9B" dy="-18">PRIMARY</tspan></text>
     <text class="tc-serif" x="24" y="146" font-size="34" font-weight="300" fill="#F8F0F3">Python</text>
     <text class="tc-serif" x="24" y="180" font-size="22" font-weight="300" fill="#B6A3AC">C  ·  C++</text>
-  </g>
-  <g class="tc-panel tc-p2" transform="translate(420 32)">
+  </g></g>
+  <g class="tc-panel tc-p2"><g transform="translate(420 32)">
     <rect width="360" height="200" rx="14" fill="#190B12" fill-opacity=".85" stroke="#C77B9B" stroke-opacity=".22"/>
     <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#C77B9B">02  AI · ML · LLM</text>
     <text class="tc-serif" x="24" y="90" font-size="30" font-weight="300" fill="#F8F0F3">LLMs  ·  NLP</text>
     <text class="tc-serif" x="24" y="130" font-size="24" font-weight="300" fill="#F8F0F3">Machine Learning</text>
     <text class="tc-serif" x="24" y="164" font-size="24" font-weight="300" fill="#B6A3AC">Deep Learning</text>
     <text class="tc-mono" x="24" y="186" font-size="10" letter-spacing="1.4" fill="#B6A3AC">AWS CERTIFIED AI PRACTITIONER</text>
-  </g>
-  <g class="tc-panel tc-p3" transform="translate(808 32)">
+  </g></g>
+  <g class="tc-panel tc-p3"><g transform="translate(808 32)">
     <rect width="360" height="200" rx="14" fill="#190B12" fill-opacity=".85" stroke="#C77B9B" stroke-opacity=".22"/>
     <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#C77B9B">03  FRONTEND</text>
     <text class="tc-serif" x="24" y="96" font-size="40" font-weight="300" fill="#F8F0F3">React</text>
     <text class="tc-serif" x="24" y="140" font-size="26" font-weight="300" fill="#F8F0F3">JavaScript</text>
     <text class="tc-serif" x="24" y="176" font-size="22" font-weight="300" fill="#B6A3AC">HTML  ·  CSS</text>
-  </g>
+  </g></g>
 
   <!-- Row 2 -->
-  <g class="tc-panel tc-p4" transform="translate(32 268)">
+  <g class="tc-panel tc-p4"><g transform="translate(32 268)">
     <rect width="360" height="200" rx="14" fill="#190B12" fill-opacity=".85" stroke="#C77B9B" stroke-opacity=".22"/>
     <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#C77B9B">04  BACKEND &amp; APIS</text>
     <text class="tc-serif" x="24" y="90" font-size="32" font-weight="300" fill="#F8F0F3">Node.js  ·  Express</text>
     <text class="tc-serif" x="24" y="132" font-size="24" font-weight="300" fill="#F8F0F3">REST APIs  ·  Microservices</text>
     <text class="tc-serif" x="24" y="170" font-size="22" font-weight="300" fill="#B6A3AC">JWT auth  ·  RBAC</text>
-  </g>
-  <g class="tc-panel tc-p5" transform="translate(420 268)">
+  </g></g>
+  <g class="tc-panel tc-p5"><g transform="translate(420 268)">
     <rect width="360" height="200" rx="14" fill="#190B12" fill-opacity=".85" stroke="#C77B9B" stroke-opacity=".22"/>
     <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#C77B9B">05  DATA &amp; INFRASTRUCTURE</text>
     <text class="tc-serif" x="24" y="90" font-size="30" font-weight="300" fill="#F8F0F3">PostgreSQL  ·  MongoDB</text>
     <text class="tc-serif" x="24" y="130" font-size="24" font-weight="300" fill="#F8F0F3">Docker  ·  Compose  ·  AWS</text>
     <text class="tc-serif" x="24" y="166" font-size="22" font-weight="300" fill="#B6A3AC">MySQL</text>
     <text class="tc-mono" x="24" y="186" font-size="10" letter-spacing="1.4" fill="#B6A3AC">INDEXING · NORMALIZATION</text>
-  </g>
-  <g class="tc-panel tc-p6" transform="translate(808 268)">
+  </g></g>
+  <g class="tc-panel tc-p6"><g transform="translate(808 268)">
     <rect width="360" height="200" rx="14" fill="#190B12" fill-opacity=".85" stroke="#C77B9B" stroke-opacity=".22"/>
     <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#C77B9B">06  TOOLS &amp; FUNDAMENTALS</text>
     <text class="tc-serif" x="24" y="90" font-size="30" font-weight="300" fill="#F8F0F3">Git  ·  GitHub  ·  Postman</text>
     <text class="tc-serif" x="24" y="130" font-size="22" font-weight="300" fill="#F8F0F3">DSA · OS · CN · DBMS · OOP</text>
     <text class="tc-serif" x="24" y="166" font-size="22" font-weight="300" fill="#B6A3AC">Multithreading · System Design</text>
-  </g>
+  </g></g>
 </svg>

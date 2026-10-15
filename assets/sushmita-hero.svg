@@ -62,7 +62,7 @@
     .d4 { animation-delay: .9s; } .d5 { animation-delay: 1.2s; } .d6 { animation-delay: 1.5s; }
 
     .hero-draw { stroke-dasharray: 900; stroke-dashoffset: 900; animation: hero-draw 2.4s cubic-bezier(.65,0,.35,1) .9s forwards; }
-    .hero-signal { stroke-dasharray: 1400; stroke-dashoffset: 1400; animation: hero-draw 4s cubic-bezier(.65,0,.35,1) .4s forwards; }
+    .hero-signal { stroke-dasharray: 500; stroke-dashoffset: 500; animation: hero-draw 2.2s cubic-bezier(.65,0,.35,1) 2.2s forwards; }
 
     @keyframes hero-rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
     @keyframes hero-fade { from { opacity: 0; } to { opacity: 1; } }
@@ -123,9 +123,9 @@
     </g>
 
     <!-- Signal path drawing itself through the composition -->
-    <path class="hero-signal" d="M40 410 C 220 410, 300 360, 420 372 S 640 420, 760 352 S 860 140, 965 232" fill="none" stroke="#C77B9B" stroke-opacity=".38" stroke-width="1.2"/>
-    <circle r="3" fill="#F8F0F3" filter="url(#hero-glow)" opacity=".9">
-      <animateMotion dur="9s" repeatCount="indefinite" begin="4s" path="M40 410 C 220 410, 300 360, 420 372 S 640 420, 760 352 S 860 140, 965 232" keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines=".45 0 .55 1"/>
+    <path class="hero-signal" d="M600 342 C 680 338, 740 316, 790 290 S 890 214, 965 232" fill="none" stroke="#C77B9B" stroke-opacity=".5" stroke-width="1.2"/>
+    <circle cx="600" cy="342" r="3" fill="#F8F0F3" filter="url(#hero-glow)" opacity=".9">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="4.4s" path="M600 342 C 680 338, 740 316, 790 290 S 890 214, 965 232" keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines=".45 0 .55 1"/>
     </circle>
 
     <!-- Terminal indicator -->

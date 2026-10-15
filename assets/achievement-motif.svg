@@ -53,11 +53,11 @@
   <rect x=".5" y=".5" width="1199" height="429" rx="19.5" fill="none" stroke="#C77B9B" stroke-opacity=".16"/>
 
   <!-- Flipkart GRiD 7.0 — hero card -->
-  <g class="ach-in a1" transform="translate(24 24)">
+  <g class="ach-in a1"><g transform="translate(24 24)">
     <g clip-path="url(#ach-clip-a)">
       <rect width="700" height="250" fill="#190B12"/>
       <rect width="700" height="250" fill="url(#ach-glow-a)"/>
-      <text class="ach-serif" x="712" y="128" text-anchor="end" font-size="150" font-weight="300" letter-spacing="-6" fill="url(#ach-outline)">GRiD 7.0</text>
+      <text class="ach-serif" x="684" y="124" text-anchor="end" font-size="128" font-weight="300" letter-spacing="-6" fill="url(#ach-outline)">GRiD 7.0</text>
       <rect x="-300" y="0" width="260" height="250" fill="url(#ach-sheen)" transform="skewX(-18)">
         <animate attributeName="x" values="-300;900;900" keyTimes="0;.35;1" dur="9s" begin="2s" repeatCount="indefinite"/>
       </rect>
@@ -67,10 +67,10 @@
     <text class="ach-mono" x="36" y="154" font-size="12" letter-spacing="2.6" fill="#C77B9B">FLIPKART · ENGINEERING CHALLENGE</text>
     <text class="ach-serif" x="34" y="204" font-size="46" font-weight="300" letter-spacing="-1" fill="#F8F0F3">National Semi-Finalist</text>
     <text class="ach-sans" x="36" y="230" font-size="14" fill="#B6A3AC">Flipkart GRiD 7.0</text>
-  </g>
+  </g></g>
 
   <!-- Myntra WeForShe HackerRamp 2026 -->
-  <g class="ach-in a2" transform="translate(700 24)">
+  <g class="ach-in a2"><g transform="translate(700 24)">
     <g transform="translate(24 0)">
       <g clip-path="url(#ach-clip-b)">
         <rect width="476" height="250" fill="#190B12"/>
@@ -83,7 +83,7 @@
       <text class="ach-serif" x="30" y="204" font-size="46" font-weight="300" letter-spacing="-1" fill="#F8F0F3">Top 100 Team</text>
       <text class="ach-sans" x="32" y="230" font-size="14" fill="#B6A3AC">StarCloset — explainable AI fashion assistant</text>
     </g>
-  </g>
+  </g></g>
 
   <!-- Animated connector across the score strip -->
   <path class="ach-draw" d="M24 300 H1176" stroke="#C77B9B" stroke-opacity=".35"/>

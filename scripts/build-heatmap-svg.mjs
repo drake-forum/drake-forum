@@ -87,7 +87,7 @@ const monthSvg = labels
   .join("");
 
 const stats = [
-  ["CONTRIBUTIONS", total.toLocaleString("en-US"), `${fmt(first)} – ${fmt(last)}`],
+  ["CONTRIBUTIONS", total.toLocaleString("en-US"), `${MONTHS[first.getUTCMonth()]} ${first.getUTCFullYear()} – ${MONTHS[last.getUTCMonth()]} ${last.getUTCFullYear()}`],
   ["ACTIVE DAYS", String(active), `of ${days.length} days`],
   ["LONGEST STREAK", String(best), "consecutive days"],
   ["BUSIEST DAY", String(peak.count), fmt(toDate(peak.date))],
