@@ -1,0 +1,55 @@
+name: Deploy portfolio to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "scripts/fetch-contributions.mjs"
+      - ".github/workflows/pages.yml"
+  schedule:
+    # Refresh the contribution heatmap once a day (06:00 UTC)
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Refreshes site/data/contributions.json from the public contribution
+      # calendar. If the fetch fails, the committed snapshot is kept.
+      - name: Refresh contribution data
+        env:
+          GH_USERNAME: ${{ github.repository_owner }}
+        run: node scripts/fetch-contributions.mjs
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

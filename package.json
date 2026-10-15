@@ -7,6 +7,8 @@
     "node": ">=18"
   },
   "scripts": {
-    "generate": "node generate.mjs"
+    "generate": "node generate.mjs",
+    "contributions": "node scripts/fetch-contributions.mjs",
+    "start": "node scripts/serve.mjs"
   }
 }
