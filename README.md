@@ -5,6 +5,7 @@
 <p align="center">
   <a href="https://sushmitadasari.github.io/Sushmitadasari/"><img src="https://img.shields.io/badge/Portfolio-sushmitadasari.github.io-701A3D?style=for-the-badge&logo=githubpages&logoColor=F8F0F3&labelColor=190B12" alt="Portfolio website"></a>
   <a href="https://www.linkedin.com/in/sushmita-dasari-227a40284/"><img src="https://img.shields.io/badge/LinkedIn-sushmita--dasari-701A3D?style=for-the-badge&labelColor=190B12&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI0Y4RjBGMyIgZD0iTTIwLjQ1IDIwLjQ1aC0zLjU2di01LjU3YzAtMS4zMy0uMDItMy4wNC0xLjg1LTMuMDQtMS44NiAwLTIuMTQgMS40NS0yLjE0IDIuOTR2NS42N0g5LjM1VjloMy40MXYxLjU2aC4wNWMuNDgtLjkgMS42NC0xLjg1IDMuMzctMS44NSAzLjYgMCA0LjI3IDIuMzcgNC4yNyA1LjQ2djYuMjhaTTUuMzQgNy40M2EyLjA2IDIuMDYgMCAxIDEgMC00LjEzIDIuMDYgMi4wNiAwIDAgMSAwIDQuMTNaTTcuMTIgMjAuNDVIMy41NlY5aDMuNTZ2MTEuNDVaTTIyLjIyIDBIMS43N0MuNzkgMCAwIC43NyAwIDEuNzN2MjAuNTRDMCAyMy4yMy43OSAyNCAxLjc3IDI0aDIwLjQ1Yy45OCAwIDEuNzgtLjc3IDEuNzgtMS43M1YxLjczQzI0IC43NyAyMy4yIDAgMjIuMjIgMFoiLz48L3N2Zz4=" alt="LinkedIn profile"></a>
+  <a href="https://leetcode.com/u/sushmita_dasari/"><img src="https://img.shields.io/badge/LeetCode-sushmita__dasari-701A3D?style=for-the-badge&logo=leetcode&logoColor=F8F0F3&labelColor=190B12" alt="LeetCode profile sushmita_dasari"></a>
   <a href="mailto:sushmitadasari17@gmail.com"><img src="https://img.shields.io/badge/Email-sushmitadasari17@gmail.com-701A3D?style=for-the-badge&logo=gmail&logoColor=F8F0F3&labelColor=190B12" alt="Email sushmitadasari17@gmail.com"></a>
 </p>
 
@@ -30,7 +31,7 @@ Java is my primary language and Python is where my ML work lives. I care about s
 
 - 🏆 **Flipkart GRiD 7.0**: National Semi-Finalist
 - 🏆 **Myntra WeForShe HackerRamp 2026**: Top 100 Team, for [StarCloset](https://github.com/Sushmitadasari/weforshe-starcloset)
-- 🧮 **Problem solving**: 1,200+ problems across LeetCode (400+, peak rating 1321), GeeksforGeeks (400+, rating 1464) and CodeChef (415+) · HackerRank 5★ in C, Python and Java · solutions in [leetcode-DSA](https://github.com/Sushmitadasari/leetcode-DSA) and [GFG-ProblemSolving](https://github.com/Sushmitadasari/GFG-ProblemSolving)
+- 🧮 **Problem solving**: 1,200+ problems across [LeetCode](https://leetcode.com/u/sushmita_dasari/) (400+, peak rating 1321), GeeksforGeeks (400+, rating 1464) and CodeChef (415+) · HackerRank 5★ in C, Python and Java · solutions in [leetcode-DSA](https://github.com/Sushmitadasari/leetcode-DSA) and [GFG-ProblemSolving](https://github.com/Sushmitadasari/GFG-ProblemSolving)
 
 <img src="assets/section-divider.svg" width="100%" alt="">
 
@@ -104,7 +105,7 @@ A project-governance platform built on shared-database multi-tenancy. Every quer
 
 ### Let's connect
 
-Have a problem worth solving, or want to talk AI products and backend systems? Reach me at **[sushmitadasari17@gmail.com](mailto:sushmitadasari17@gmail.com)**, on **[LinkedIn](https://www.linkedin.com/in/sushmita-dasari-227a40284/)**, or browse the full **[portfolio](https://sushmitadasari.github.io/Sushmitadasari/)** and **[video portfolio](https://videoportfolio-kohl.vercel.app/)**.
+Have a problem worth solving, or want to talk AI products and backend systems? Reach me at **[sushmitadasari17@gmail.com](mailto:sushmitadasari17@gmail.com)**, on **[LinkedIn](https://www.linkedin.com/in/sushmita-dasari-227a40284/)** and **[LeetCode](https://leetcode.com/u/sushmita_dasari/)**, or browse the full **[portfolio](https://sushmitadasari.github.io/Sushmitadasari/)** and **[video portfolio](https://videoportfolio-kohl.vercel.app/)**.
 
 <a href="https://sushmitadasari.github.io/Sushmitadasari/">
   <img src="assets/footer-signature.svg" width="100%" alt="Sushmita — Building systems that can explain themselves.">
