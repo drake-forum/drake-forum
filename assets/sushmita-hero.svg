@@ -16,10 +16,21 @@
       <stop offset="0" stop-color="#C77B9B" stop-opacity=".28"/>
       <stop offset="1" stop-color="#C77B9B" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="hero-name-grad" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="hero-name-grad" gradientUnits="userSpaceOnUse" x1="60" y1="0" x2="420" y2="0">
       <stop offset="0" stop-color="#F8F0F3"/>
       <stop offset=".55" stop-color="#E5B5C7"/>
       <stop offset="1" stop-color="#C77B9B"/>
+    </linearGradient>
+    <linearGradient id="hero-sheen" gradientUnits="userSpaceOnUse" x1="-260" y1="0" x2="-40" y2="0">
+      <stop offset="0" stop-color="#F8F0F3" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#F8F0F3" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="0 0;760 0;760 0" keyTimes="0;.35;1" dur="8s" begin="3s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="hero-scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E5B5C7" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#E5B5C7" stop-opacity=".07"/>
+      <stop offset="1" stop-color="#E5B5C7" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="hero-rule" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#C77B9B" stop-opacity="0"/>
@@ -90,9 +101,31 @@
     <!-- Technical grid -->
     <rect width="1200" height="480" fill="url(#hero-grid)" mask="url(#hero-grid-mask)"/>
 
+    <!-- Slow scan line across the grid -->
+    <rect x="0" y="-140" width="1200" height="140" fill="url(#hero-scan)">
+      <animate attributeName="y" values="-140;480" dur="11s" begin="2s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Drifting particles -->
+    <g fill="#E5B5C7">
+      <circle cx="560" cy="120" r="1.4"><animate attributeName="opacity" values="0;.9;0" dur="4.2s" repeatCount="indefinite"/><animate attributeName="cy" values="120;96" dur="4.2s" repeatCount="indefinite"/></circle>
+      <circle cx="700" cy="70" r="1.1"><animate attributeName="opacity" values="0;.8;0" dur="5.6s" begin="1s" repeatCount="indefinite"/><animate attributeName="cy" values="70;48" dur="5.6s" begin="1s" repeatCount="indefinite"/></circle>
+      <circle cx="1120" cy="380" r="1.6"><animate attributeName="opacity" values="0;.9;0" dur="4.8s" begin="2s" repeatCount="indefinite"/><animate attributeName="cy" values="380;352" dur="4.8s" begin="2s" repeatCount="indefinite"/></circle>
+      <circle cx="760" cy="420" r="1.2"><animate attributeName="opacity" values="0;.7;0" dur="6s" begin=".5s" repeatCount="indefinite"/><animate attributeName="cy" values="420;396" dur="6s" begin=".5s" repeatCount="indefinite"/></circle>
+      <circle cx="1060" cy="60" r="1.3"><animate attributeName="opacity" values="0;.85;0" dur="5s" begin="3s" repeatCount="indefinite"/><animate attributeName="cy" values="60;40" dur="5s" begin="3s" repeatCount="indefinite"/></circle>
+      <circle cx="640" cy="250" r="1"><animate attributeName="opacity" values="0;.7;0" dur="4.4s" begin="2.5s" repeatCount="indefinite"/><animate attributeName="cy" values="250;226" dur="4.4s" begin="2.5s" repeatCount="indefinite"/></circle>
+    </g>
+
     <!-- Orbital system -->
     <g transform="translate(965 232)" class="hero-fade d3">
       <circle r="190" fill="none" stroke="url(#hero-orbit-grad)" stroke-width="1"/>
+      <circle r="212" fill="none" stroke="#C77B9B" stroke-opacity=".1" stroke-dasharray="1 10">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="140s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="44" fill="none" stroke="#E5B5C7" stroke-opacity=".5">
+        <animate attributeName="r" values="44;70" dur="4s" begin="2s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values=".5;0" dur="4s" begin="2s" repeatCount="indefinite"/>
+      </circle>
       <circle r="140" fill="none" stroke="#C77B9B" stroke-opacity=".16" stroke-dasharray="2 7"/>
       <circle r="92" fill="none" stroke="#C77B9B" stroke-opacity=".14"/>
       <circle r="44" fill="#190B12" stroke="#C77B9B" stroke-opacity=".45"/>
@@ -149,6 +182,12 @@
     <!-- Name -->
     <text class="hero-serif hero-rise d3" x="68" y="230" font-size="92" font-weight="300" letter-spacing="-2.5" fill="#F8F0F3">Sri Sushmita</text>
     <text class="hero-serif hero-rise d4" x="68" y="318" font-size="92" font-style="italic" font-weight="300" letter-spacing="-2.5" fill="url(#hero-name-grad)">Dasari<tspan fill="#C77B9B">.</tspan></text>
+
+    <!-- Light sweeping across the name -->
+    <g class="hero-fade d6" pointer-events="none">
+      <text class="hero-serif" x="68" y="230" font-size="92" font-weight="300" letter-spacing="-2.5" fill="url(#hero-sheen)">Sri Sushmita</text>
+      <text class="hero-serif" x="68" y="318" font-size="92" font-style="italic" font-weight="300" letter-spacing="-2.5" fill="url(#hero-sheen)">Dasari.</text>
+    </g>
 
     <!-- Glowing underline -->
     <path class="hero-draw" d="M72 346 C 220 340, 420 352, 600 342" fill="none" stroke="url(#hero-rule)" stroke-width="2" stroke-linecap="round" filter="url(#hero-glow)"/>

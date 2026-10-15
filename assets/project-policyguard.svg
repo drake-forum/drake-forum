@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-labelledby="p1-t">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 370" width="1200" height="370" role="img" aria-labelledby="p1-t">
   <title id="p1-t">PolicyGuard AI: Turns long, dense policy documents into answers you can check.</title>
   <defs>
     <linearGradient id="p1-bg" x1="0" y1="0" x2="1" y2="1">
@@ -13,7 +13,7 @@
     <filter id="p1-glowf" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <clipPath id="p1-clip"><rect width="1200" height="300" rx="18"/></clipPath>
+    <clipPath id="p1-clip"><rect width="1200" height="370" rx="18"/></clipPath>
   </defs>
   <style>
     .p1-serif { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }
@@ -21,25 +21,29 @@
     .p1-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
     .p1-in { animation: p1-in 1.2s cubic-bezier(.16,1,.3,1) both; }
     .p1-d1 { animation-delay: .15s; } .p1-d2 { animation-delay: .4s; }
+    .p1-chip { animation: p1-chip .7s cubic-bezier(.34,1.56,.64,1) both; }
+    @keyframes p1-chip { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
     .p1-draw { stroke-dasharray: 600; stroke-dashoffset: 600; animation: p1-draw 2s cubic-bezier(.65,0,.35,1) .5s forwards; }
     @keyframes p1-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
     @keyframes p1-draw { to { stroke-dashoffset: 0; } }
-    @media (prefers-reduced-motion: reduce) { .p1-in { animation: none; } .p1-draw { animation: none; stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { .p1-in, .p1-chip { animation: none; } .p1-draw { animation: none; stroke-dashoffset: 0; } }
   </style>
   <g clip-path="url(#p1-clip)">
-    <rect width="1200" height="300" fill="url(#p1-bg)"/>
-    <rect x="720" width="480" height="300" fill="url(#p1-grid)"/>
-    <rect width="1200" height="300" fill="url(#p1-glow)"/>
+    <rect width="1200" height="370" fill="url(#p1-bg)"/>
+    <rect x="720" width="480" height="370" fill="url(#p1-grid)"/>
+    <rect width="1200" height="370" fill="url(#p1-glow)"/>
     <g class="p1-in p1-d1">
       <text class="p1-mono" x="56" y="62" font-size="12" letter-spacing="2.6" fill="#C77B9B">01 · AI · NLP · LLM · 2026</text>
       <text class="p1-serif" x="54" y="126" font-size="52" font-weight="300" letter-spacing="-1.5" fill="#F8F0F3">PolicyGuard AI</text>
       <text class="p1-sans" x="56" y="166" font-size="17" fill="#B6A3AC">Turns long, dense policy documents into answers you can check.</text>
-      <line x1="56" y1="198" x2="660" y2="198" stroke="#C77B9B" stroke-opacity=".18"/>
-    <g transform="translate(56 236)"><text class="p1-serif" font-size="34" font-weight="300" fill="#F8F0F3">500+</text><text class="p1-sans" y="24" font-size="12.5" fill="#B6A3AC">policy documents processed</text></g>
-    <g transform="translate(261 236)"><text class="p1-serif" font-size="34" font-weight="300" fill="#F8F0F3">92%</text><text class="p1-sans" y="24" font-size="12.5" fill="#B6A3AC">accuracy</text></g>
-    <g transform="translate(466 236)"><text class="p1-serif" font-size="34" font-weight="300" fill="#F8F0F3">60%</text><text class="p1-sans" y="24" font-size="12.5" fill="#B6A3AC">less manual review time</text></g>
+      <text class="p1-mono" x="56" y="200" font-size="12.5" fill="#E5B5C7"><tspan fill="#C77B9B">BUILT ›</tspan> LLM Q&amp;A + key-info extraction, 10+ doc types, web/extension/mobile/desktop</text>
+      <line class="p1-draw" x1="56" y1="226" x2="680" y2="226" stroke="#C77B9B" stroke-opacity=".3"/>
+    <g transform="translate(56 266)"><text class="p1-serif" font-size="34" font-weight="300" fill="#F8F0F3">500+</text><text class="p1-sans" y="24" font-size="12.5" fill="#B6A3AC">policy documents processed</text></g>
+    <g transform="translate(261 266)"><text class="p1-serif" font-size="34" font-weight="300" fill="#F8F0F3">92%</text><text class="p1-sans" y="24" font-size="12.5" fill="#B6A3AC">accuracy</text></g>
+    <g transform="translate(466 266)"><text class="p1-serif" font-size="34" font-weight="300" fill="#F8F0F3">60%</text><text class="p1-sans" y="24" font-size="12.5" fill="#B6A3AC">less manual review time</text></g>
+      <g class="p1-chip" style="animation-delay:1.00s"><rect x="56" y="314" width="62" height="26" rx="13" fill="#27101C" stroke="#C77B9B" stroke-opacity=".35"/><text class="p1-mono" x="87" y="331" text-anchor="middle" font-size="11.5" fill="#E5B5C7">Python</text></g><g class="p1-chip" style="animation-delay:1.12s"><rect x="126" y="314" width="40" height="26" rx="13" fill="#27101C" stroke="#C77B9B" stroke-opacity=".35"/><text class="p1-mono" x="146" y="331" text-anchor="middle" font-size="11.5" fill="#E5B5C7">NLP</text></g><g class="p1-chip" style="animation-delay:1.24s"><rect x="175" y="314" width="40" height="26" rx="13" fill="#27101C" stroke="#C77B9B" stroke-opacity=".35"/><text class="p1-mono" x="195" y="331" text-anchor="middle" font-size="11.5" fill="#E5B5C7">LLM</text></g><g class="p1-chip" style="animation-delay:1.36s"><rect x="223" y="314" width="77" height="26" rx="13" fill="#27101C" stroke="#C77B9B" stroke-opacity=".35"/><text class="p1-mono" x="261" y="331" text-anchor="middle" font-size="11.5" fill="#E5B5C7">REST API</text></g><g class="p1-chip" style="animation-delay:1.48s"><rect x="308" y="314" width="159" height="26" rx="13" fill="#27101C" stroke="#C77B9B" stroke-opacity=".35"/><text class="p1-mono" x="387" y="331" text-anchor="middle" font-size="11.5" fill="#E5B5C7">8 policy categories</text></g>
     </g>
-    <g class="p1-in p1-d2">
+    <g class="p1-in p1-d2"><g transform="translate(0 35)">
       <g transform="translate(870 46)">
         <rect x="-40" y="22" width="150" height="196" rx="10" fill="#27101C" stroke="#C77B9B" stroke-opacity=".2" transform="rotate(-9 35 120)"/>
         <rect x="-10" y="14" width="150" height="196" rx="10" fill="#2F1422" stroke="#C77B9B" stroke-opacity=".28" transform="rotate(-3 65 112)"/>
@@ -62,7 +66,7 @@
           <text class="p1-mono" x="14" y="40" font-size="10.5" fill="#E5B5C7">A · extracted from source</text>
         </g>
       </g>
-    </g>
-    <rect x=".5" y=".5" width="1199" height="299" rx="17.5" fill="none" stroke="#C77B9B" stroke-opacity=".2"/>
+    </g></g>
+    <rect x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="#C77B9B" stroke-opacity=".2"/>
   </g>
 </svg>
