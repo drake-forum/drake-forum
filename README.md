@@ -1,5 +1,5 @@
 <a href="https://sushmitadasari.github.io/Sushmitadasari/">
-  <img src="assets/sushmita-hero.svg" width="100%" alt="Sri Sushmita Dasari — AI/ML Engineer, Full-Stack Developer and Creative Technologist. Engineering intelligence. Designing experiences.">
+  <img src="assets/sushmita-hero-portrait.svg" width="100%" alt="Sri Sushmita Dasari — AI/ML Engineer, Full-Stack Developer and Creative Technologist. Engineering intelligence. Designing experiences.">
 </a>
 
 <p align="center">
