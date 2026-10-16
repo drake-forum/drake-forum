@@ -1,19 +1,19 @@
 #!/usr/bin/env node
 /**
- * Renders assets/contribution-heatmap.svg for the profile README from the
+ * Renders assets/contribution-snake.svg for the profile README from the
  * real contribution snapshot in site/data/contributions.json (written by
  * scripts/fetch-contributions.mjs). No data is invented: if the snapshot is
  * missing, the script exits without touching the existing SVG.
  *
  * Env: INPUT_PATH (default site/data/contributions.json),
- *      OUTPUT_PATH (default assets/contribution-heatmap.svg)
+ *      OUTPUT_PATH (default assets/contribution-snake.svg)
  */
 
 import fs from "node:fs";
 import path from "node:path";
 
 const INPUT = process.env.INPUT_PATH || "site/data/contributions.json";
-const OUTPUT = process.env.OUTPUT_PATH || "assets/contribution-heatmap.svg";
+const OUTPUT = process.env.OUTPUT_PATH || "assets/contribution-snake.svg";
 
 const W = 1200;
 const H = 410;
@@ -64,58 +64,52 @@ const pos = (i) => {
 };
 const label = (d) => `${d.count} contribution${d.count === 1 ? "" : "s"} · ${fmt(toDate(d.date))}`;
 
+/* ---- Snake ----
+ * Slithers through the grid in a serpentine (down one week, up the next),
+ * "eating" each active day as its head arrives. Eaten days stay empty until
+ * the loop restarts, so the whole year reappears every cycle. */
+const weeksCount = Math.floor((days.length - 1 + offset) / 7) + 1;
+const center = (week, dow) => [GRID_X + week * STEP + CELL / 2, GRID_Y + dow * STEP + CELL / 2];
+const route = [];
+for (let w = 0; w < weeksCount; w++) {
+  for (let r = 0; r < 7; r++) route.push(center(w, w % 2 === 0 ? r : 6 - r));
+}
+const [fx, fy] = route[0];
+const [lx, ly] = route[route.length - 1];
+route.unshift([fx, fy - STEP]); // slide in from above the first week
+route.push([lx + STEP, ly]); // slide out past the last week
+const SNAKE_DT = 0.055; // seconds per cell
+const SNAKE_BEGIN = 2.4;
+const runTime = (route.length - 1) * SNAKE_DT;
+const loop = runTime + 3.5;
+const runFrac = (runTime / loop).toFixed(4);
+const routeD = "M" + route.map(([x, y]) => `${x.toFixed(1)} ${y.toFixed(1)}`).join(" L");
+
+// position in the serpentine route for a given day index (+1 for the entry step)
+const routeIndex = (i) => {
+  const { week, dow } = pos(i);
+  return week * 7 + (week % 2 === 0 ? dow : 6 - dow) + 1;
+};
 // Base cells enter as a diagonal wave (week + weekday offset).
 const cellsSvg = days
   .map((d, i) => {
     const { week, dow, x, y } = pos(i);
     const delay = (0.3 + (week + dow * 1.6) * 0.018).toFixed(3);
     const glow = d.level === 4 ? ' filter="url(#hm-glow)"' : "";
-    return `<rect class="hm-c" style="animation-delay:${delay}s" x="${x}" y="${y}" width="${CELL}" height="${CELL}" rx="3.5" fill="${LEVELS[d.level] ?? LEVELS[0]}"${glow}><title>${label(d)}</title></rect>`;
+    const color = LEVELS[d.level] ?? LEVELS[0];
+    const eat = d.count > 0
+      ? `<animate attributeName="fill" values="${color};${LEVELS[0]}" keyTimes="0;${((routeIndex(i) * SNAKE_DT) / loop).toFixed(4)}" calcMode="discrete" dur="${loop.toFixed(2)}s" begin="${SNAKE_BEGIN}s" repeatCount="indefinite"/>`
+      : "";
+    return `<rect class="hm-c" style="animation-delay:${delay}s" x="${x}" y="${y}" width="${CELL}" height="${CELL}" rx="3.5" fill="${color}"${glow}><title>${label(d)}</title>${eat}</rect>`;
   })
   .join("\n    ");
 
-// Bright copies of active days, revealed only where the scan beam passes.
-const litSvg = days
-  .map((d, i) => {
-    if (d.count === 0) return "";
-    const { x, y } = pos(i);
-    const o = (0.35 + d.level * 0.16).toFixed(2);
-    return `<rect x="${x}" y="${y}" width="${CELL}" height="${CELL}" rx="3.5" fill="#F8F0F3" fill-opacity="${o}"/>`;
-  })
-  .join("");
-
-// The busiest days pulse with an expanding ring.
-const top = days
-  .map((d, i) => ({ d, i }))
-  .filter(({ d }) => d.count > 0)
-  .sort((a, b) => b.d.count - a.d.count)
-  .slice(0, 6);
-const pulsesSvg = top
-  .map(({ i }, k) => {
-    const { x, y } = pos(i);
-    const cx = x + CELL / 2, cy = y + CELL / 2, begin = (2.4 + k * 0.7).toFixed(1);
-    return `<circle cx="${cx}" cy="${cy}" r="8" fill="none" stroke="#E5B5C7" stroke-width="1.2" opacity="0">
-      <animate attributeName="r" values="8;20" dur="3.2s" begin="${begin}s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;.9;0" keyTimes="0;.15;1" dur="3.2s" begin="${begin}s" repeatCount="indefinite"/>
-    </circle>`;
-  })
-  .join("\n    ");
-
-// The longest streak lights up day by day, holds, then fades and repeats.
+// Label the longest streak under the grid.
 let streakSvg = "";
 if (best > 1) {
-  const cells = [];
-  for (let i = bestStart, k = 0; i <= bestEnd; i++, k++) {
-    const { x, y } = pos(i);
-    const begin = (2 + k * 0.09).toFixed(2);
-    cells.push(`<rect x="${x - 1}" y="${y - 1}" width="${CELL + 2}" height="${CELL + 2}" rx="4.5" fill="#F8F0F3" fill-opacity=".18" stroke="#F8F0F3" stroke-width="1.4" opacity="0" filter="url(#hm-glow)">
-      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.04;.6;.72;1" dur="9s" begin="${begin}s" repeatCount="indefinite"/>
-    </rect>`);
-  }
   const startPos = pos(bestStart);
   const labelX = Math.min(startPos.x, W - 360);
-  streakSvg = `${cells.join("\n    ")}
-    <g class="hm-fade" style="animation-delay:2.6s">
+  streakSvg = `<g class="hm-fade" style="animation-delay:2.6s">
       <path d="M${startPos.x + CELL / 2} ${GRID_Y + 7 * STEP - 2} V ${GRID_Y + 7 * STEP + 10}" stroke="#E5B5C7" stroke-opacity=".6"/>
       <text class="hm-mono" x="${labelX}" y="${GRID_Y + 7 * STEP + 24}" font-size="10.5" letter-spacing="1.6" fill="#E5B5C7">LONGEST STREAK · ${best} DAYS · ${fmt(toDate(days[bestStart].date)).toUpperCase()} – ${fmt(toDate(days[bestEnd].date)).toUpperCase()}</text>
     </g>`;
@@ -123,6 +117,22 @@ if (best > 1) {
 
 const gridW = (Math.floor((days.length - 1 + offset) / 7) + 1) * STEP;
 const gridH = 7 * STEP;
+
+const SEGMENTS = 9;
+const snakeSvg = Array.from({ length: SEGMENTS }, (_, k) => {
+  const seg = SEGMENTS - 1 - k; // draw tail first so the head sits on top
+  const size = CELL - seg * 0.9;
+  const fill = seg === 0 ? "#F8F0F3" : seg < 3 ? "#E5B5C7" : seg < 6 ? "#C77B9B" : "#A12556";
+  const op = (1 - seg * 0.06).toFixed(2);
+  const glow = seg === 0 ? ' filter="url(#hm-glow)"' : "";
+  const begin = (SNAKE_BEGIN + seg * SNAKE_DT).toFixed(3);
+  const eyes = seg === 0 ? `<circle cx="${(size / 2 - 4).toFixed(1)}" cy="-2.5" r="1.3" fill="#10070C"/><circle cx="${(size / 2 - 4).toFixed(1)}" cy="2.5" r="1.3" fill="#10070C"/>` : "";
+  return `<g opacity="0"${glow}>
+      <animateMotion path="${routeD}" rotate="auto" dur="${loop.toFixed(2)}s" begin="${begin}s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;${runFrac};1"/>
+      <animate attributeName="opacity" values="${op};0" keyTimes="0;${runFrac}" calcMode="discrete" dur="${loop.toFixed(2)}s" begin="${begin}s" repeatCount="indefinite"/>
+      <rect x="${(-size / 2).toFixed(1)}" y="${(-size / 2).toFixed(1)}" width="${size.toFixed(1)}" height="${size.toFixed(1)}" rx="${(size / 2.6).toFixed(1)}" fill="${fill}"/>${eyes}
+    </g>`;
+}).join("\n    ");
 
 /* ---- Month labels (skip a partial first month that would collide) ---- */
 const labels = [];
@@ -168,17 +178,6 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" wid
     <radialGradient id="hm-light" cx="88%" cy="0%" r="70%">
       <stop offset="0" stop-color="#701A3D" stop-opacity=".55"/><stop offset="1" stop-color="#451126" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="hm-beam-grad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="hm-beam-line" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#E5B5C7" stop-opacity="0"/><stop offset=".5" stop-color="#E5B5C7" stop-opacity=".9"/><stop offset="1" stop-color="#E5B5C7" stop-opacity="0"/>
-    </linearGradient>
-    <mask id="hm-beam-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="${W}" height="${H}">
-      <rect x="${GRID_X - 160}" y="${GRID_Y - 6}" width="140" height="${gridH + 12}" fill="url(#hm-beam-grad)">
-        <animate attributeName="x" values="${GRID_X - 160};${GRID_X + gridW + 20}" dur="7s" begin="3.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .55 1"/>
-      </rect>
-    </mask>
     <filter id="hm-glow" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
@@ -215,14 +214,10 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" wid
   </g>
 
   <g class="hm-motion">
-    <g mask="url(#hm-beam-mask)">${litSvg}</g>
-    <rect x="${GRID_X - 90}" y="${GRID_Y - 8}" width="1.5" height="${gridH + 14}" fill="url(#hm-beam-line)" opacity="0">
-      <animate attributeName="x" values="${GRID_X - 90};${GRID_X + gridW + 90}" dur="7s" begin="3.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .55 1"/>
-      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.9;1" dur="7s" begin="3.2s" repeatCount="indefinite"/>
-    </rect>
-    ${pulsesSvg}
-    ${streakSvg}
+    ${snakeSvg}
   </g>
+
+  ${streakSvg}
 
   <g class="hm-fade">
     <text class="hm-mono" x="56" y="382" font-size="10.5" fill="#B6A3AC">Source: public GitHub contribution calendar for @${esc(data.login)} · snapshot ${fetched} · refreshed daily</text>

@@ -11,6 +11,9 @@
     <radialGradient id="tc-pulse">
       <stop offset="0" stop-color="#F8F0F3"/><stop offset=".5" stop-color="#E5B5C7" stop-opacity=".6"/><stop offset="1" stop-color="#C77B9B" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="tc-trace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8F0F3"/><stop offset=".45" stop-color="#E5B5C7"/><stop offset="1" stop-color="#C77B9B" stop-opacity="0"/>
+    </linearGradient>
   </defs>
   <style>
     .tc-serif { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }
@@ -25,6 +28,9 @@
       .tc-panel { animation: none; }
       .tc-web { animation: none; stroke-dashoffset: 0; }
     }
+    .tc-trace { stroke-dasharray: 201 1120; stroke-dashoffset: 1321; animation: tc-trace 7s linear infinite; }
+    @keyframes tc-trace { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { .tc-trace { display: none; } }
   </style>
 
   <rect width="1200" height="500" rx="20" fill="url(#tc-bg)"/>
@@ -45,6 +51,7 @@
   <!-- Row 1 -->
   <g class="tc-panel tc-p1"><g transform="translate(32 32)">
     <rect width="360" height="200" rx="14" fill="#190B12" fill-opacity=".85" stroke="#C77B9B" stroke-opacity=".22"/>
+    <rect class="tc-trace" style="animation-delay:0.00s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
     <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#C77B9B">01  LANGUAGES</text>
     <text class="tc-serif" x="24" y="96" font-size="40" font-weight="300" fill="#F8F0F3">Java <tspan font-size="13" class="tc-mono" fill="#C77B9B" dy="-18">PRIMARY</tspan></text>
     <text class="tc-serif" x="24" y="146" font-size="34" font-weight="300" fill="#F8F0F3">Python</text>
@@ -52,6 +59,7 @@
   </g></g>
   <g class="tc-panel tc-p2"><g transform="translate(420 32)">
     <rect width="360" height="200" rx="14" fill="#190B12" fill-opacity=".85" stroke="#C77B9B" stroke-opacity=".22"/>
+    <rect class="tc-trace" style="animation-delay:-1.15s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
     <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#C77B9B">02  AI · ML · LLM</text>
     <text class="tc-serif" x="24" y="90" font-size="30" font-weight="300" fill="#F8F0F3">LLMs  ·  NLP</text>
     <text class="tc-serif" x="24" y="130" font-size="24" font-weight="300" fill="#F8F0F3">Machine Learning</text>
@@ -60,6 +68,7 @@
   </g></g>
   <g class="tc-panel tc-p3"><g transform="translate(808 32)">
     <rect width="360" height="200" rx="14" fill="#190B12" fill-opacity=".85" stroke="#C77B9B" stroke-opacity=".22"/>
+    <rect class="tc-trace" style="animation-delay:-2.30s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
     <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#C77B9B">03  FRONTEND</text>
     <text class="tc-serif" x="24" y="96" font-size="40" font-weight="300" fill="#F8F0F3">React</text>
     <text class="tc-serif" x="24" y="140" font-size="26" font-weight="300" fill="#F8F0F3">JavaScript</text>
@@ -69,6 +78,7 @@
   <!-- Row 2 -->
   <g class="tc-panel tc-p4"><g transform="translate(32 268)">
     <rect width="360" height="200" rx="14" fill="#190B12" fill-opacity=".85" stroke="#C77B9B" stroke-opacity=".22"/>
+    <rect class="tc-trace" style="animation-delay:-3.45s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
     <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#C77B9B">04  BACKEND &amp; APIS</text>
     <text class="tc-serif" x="24" y="90" font-size="32" font-weight="300" fill="#F8F0F3">Node.js  ·  Express</text>
     <text class="tc-serif" x="24" y="132" font-size="24" font-weight="300" fill="#F8F0F3">REST APIs  ·  Microservices</text>
@@ -76,6 +86,7 @@
   </g></g>
   <g class="tc-panel tc-p5"><g transform="translate(420 268)">
     <rect width="360" height="200" rx="14" fill="#190B12" fill-opacity=".85" stroke="#C77B9B" stroke-opacity=".22"/>
+    <rect class="tc-trace" style="animation-delay:-4.60s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
     <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#C77B9B">05  DATA &amp; INFRASTRUCTURE</text>
     <text class="tc-serif" x="24" y="90" font-size="30" font-weight="300" fill="#F8F0F3">PostgreSQL  ·  MongoDB</text>
     <text class="tc-serif" x="24" y="130" font-size="24" font-weight="300" fill="#F8F0F3">Docker  ·  Compose  ·  AWS</text>
@@ -84,6 +95,7 @@
   </g></g>
   <g class="tc-panel tc-p6"><g transform="translate(808 268)">
     <rect width="360" height="200" rx="14" fill="#190B12" fill-opacity=".85" stroke="#C77B9B" stroke-opacity=".22"/>
+    <rect class="tc-trace" style="animation-delay:-5.75s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
     <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#C77B9B">06  TOOLS &amp; FUNDAMENTALS</text>
     <text class="tc-serif" x="24" y="90" font-size="30" font-weight="300" fill="#F8F0F3">Git  ·  GitHub  ·  Postman</text>
     <text class="tc-serif" x="24" y="130" font-size="22" font-weight="300" fill="#F8F0F3">DSA · OS · CN · DBMS · OOP</text>

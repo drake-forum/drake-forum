@@ -34,7 +34,7 @@ jobs:
 
       - name: Commit if changed
         run: |
-          git add site/data/contributions.json assets/contribution-heatmap.svg
+          git add site/data/contributions.json assets/contribution-snake.svg
           if git diff --cached --quiet; then
             echo "No changes."
             exit 0
