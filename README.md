@@ -1,9 +1,9 @@
-<a href="https://drakefolio.netlify.app/">
+<a href="https://portfolio.drakeforum.me/">
   <img src="assets/hero-banner.svg" width="100%" alt="Devansh Chaturvedi — MultiLevel Developer. Engineering systems that scale. Designing experiences that delight.">
 </a>
 
 <p align="center">
-  <a href="https://drakefolio.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-drakefolio.netlify.app-0D9488?style=for-the-badge&labelColor=081A1D&logoColor=F0FDFA&logo=safari" alt="Portfolio website"></a>
+  <a href="https://portfolio.drakeforum.me/"><img src="https://img.shields.io/badge/Portfolio-portfolio.drakeforum.me-0D9488?style=for-the-badge&labelColor=081A1D&logoColor=F0FDFA&logo=safari" alt="Portfolio website"></a>
   <a href="https://www.linkedin.com/in/devansh-chaturvedi-b42a76317/"><img src="https://img.shields.io/badge/LinkedIn-Devansh_Chaturvedi-0D9488?style=for-the-badge&labelColor=081A1D&logoColor=F0FDFA&logo=linkedin" alt="LinkedIn profile"></a>
   <a href="https://github.com/drake-forum"><img src="https://img.shields.io/badge/GitHub-drake--forum-0D9488?style=for-the-badge&labelColor=081A1D&logoColor=F0FDFA&logo=github" alt="GitHub profile drake-forum"></a>
   <a href="https://x.com/drake_forum"><img src="https://img.shields.io/badge/X-@drake__forum-0D9488?style=for-the-badge&labelColor=081A1D&logoColor=F0FDFA&logo=x" alt="X Twitter profile"></a>
@@ -49,10 +49,10 @@
 <p align="center">
   <a href="mailto:contact@drakeforum.me"><img src="https://img.shields.io/badge/Email-contact@drakeforum.me-0D9488?style=for-the-badge&labelColor=081A1D&logoColor=F0FDFA&logo=gmail" alt="Email contact@drakeforum.me"></a>
   <a href="https://www.linkedin.com/in/devansh-chaturvedi-b42a76317/"><img src="https://img.shields.io/badge/LinkedIn-Devansh_Chaturvedi-0D9488?style=for-the-badge&labelColor=081A1D&logoColor=F0FDFA&logo=linkedin" alt="LinkedIn profile"></a>
-  <a href="https://drakefolio.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-drakefolio.netlify.app-0D9488?style=for-the-badge&labelColor=081A1D&logoColor=F0FDFA&logo=safari" alt="Portfolio website"></a>
+  <a href="https://portfolio.drakeforum.me/"><img src="https://img.shields.io/badge/Portfolio-portfolio.drakeforum.me-0D9488?style=for-the-badge&labelColor=081A1D&logoColor=F0FDFA&logo=safari" alt="Portfolio website"></a>
   <a href="https://x.com/drake_forum"><img src="https://img.shields.io/badge/X-@drake__forum-0D9488?style=for-the-badge&labelColor=081A1D&logoColor=F0FDFA&logo=x" alt="X Twitter profile"></a>
 </p>
 
-<a href="https://drakefolio.netlify.app/">
+<a href="https://portfolio.drakeforum.me/">
   <img src="assets/footer-signature-v2.svg" width="100%" alt="Devansh Chaturvedi — Engineering systems that scale. Designing experiences that delight.">
 </a>
