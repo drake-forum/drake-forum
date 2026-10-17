@@ -1,39 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-labelledby="ach-title ach-desc">
-  <title id="ach-title">Recognition</title>
-  <desc id="ach-desc">Flipkart GRiD 7.0 National Semi-Finalist. Myntra WeForShe HackerRamp 2026 Top 100 Team. CGPA 9.10. LeetCode 400+ problems, peak rating 1321. GeeksforGeeks 400+ problems, rating 1464. CodeChef 415+ problems. HackerRank 5 stars in C, Python and Java.</desc>
+  <title id="ach-title">Recognition — Devansh Chaturvedi</title>
+  <desc id="ach-desc">Ripple XRP Hackathon Semi-Finalist. OpenClaw Major Contributor. NPTEL DSA in Python 96%. 100M+ streaming sessions on HiAnime. 10 Lakh users on Bitchord.</desc>
 
   <defs>
     <linearGradient id="ach-bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#190B12"/>
-      <stop offset="1" stop-color="#10070C"/>
+      <stop offset="0" stop-color="#081A1D"/>
+      <stop offset="1" stop-color="#040F11"/>
     </linearGradient>
     <radialGradient id="ach-glow-a" cx="85%" cy="0%" r="90%">
-      <stop offset="0" stop-color="#701A3D" stop-opacity=".85"/>
-      <stop offset="1" stop-color="#451126" stop-opacity="0"/>
+      <stop offset="0" stop-color="#0D9488" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#042F2E" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="ach-glow-b" cx="90%" cy="0%" r="90%">
-      <stop offset="0" stop-color="#C77B9B" stop-opacity=".35"/>
-      <stop offset="1" stop-color="#451126" stop-opacity="0"/>
+      <stop offset="0" stop-color="#14B8A6" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#042F2E" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="ach-hair" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C9A27A" stop-opacity="0"/>
-      <stop offset=".4" stop-color="#C9A27A"/>
-      <stop offset=".6" stop-color="#E5B5C7"/>
-      <stop offset="1" stop-color="#E5B5C7" stop-opacity="0"/>
+      <stop offset="0" stop-color="#2DD4BF" stop-opacity="0"/>
+      <stop offset=".4" stop-color="#5EEAD4"/>
+      <stop offset=".6" stop-color="#99F6E4"/>
+      <stop offset="1" stop-color="#2DD4BF" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="ach-outline" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#E5B5C7" stop-opacity=".55"/>
-      <stop offset="1" stop-color="#E5B5C7" stop-opacity="0"/>
+      <stop offset="0" stop-color="#5EEAD4" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#2DD4BF" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="ach-sheen" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#F8F0F3" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#F8F0F3" stop-opacity=".08"/>
-      <stop offset="1" stop-color="#F8F0F3" stop-opacity="0"/>
+      <stop offset="0" stop-color="#F0FDFA" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#F0FDFA" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#F0FDFA" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="ach-clip-a"><rect x="0" y="0" width="700" height="250" rx="16"/></clipPath>
     <clipPath id="ach-clip-b"><rect x="0" y="0" width="476" height="250" rx="16"/></clipPath>
     <linearGradient id="ach-trace" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#F8F0F3"/><stop offset=".45" stop-color="#E5B5C7"/><stop offset="1" stop-color="#C77B9B" stop-opacity="0"/>
+      <stop offset="0" stop-color="#F0FDFA"/><stop offset=".45" stop-color="#5EEAD4"/><stop offset="1" stop-color="#0D9488" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
@@ -58,77 +58,77 @@
   </style>
 
   <rect width="1200" height="430" rx="20" fill="url(#ach-bg)"/>
-  <rect x=".5" y=".5" width="1199" height="429" rx="19.5" fill="none" stroke="#C77B9B" stroke-opacity=".16"/>
+  <rect x=".5" y=".5" width="1199" height="429" rx="19.5" fill="none" stroke="#2DD4BF" stroke-opacity=".22"/>
 
-  <!-- Flipkart GRiD 7.0 — hero card -->
+  <!-- Ripple XRP Hackathon — hero card -->
   <g class="ach-in a1"><g transform="translate(24 24)">
     <g clip-path="url(#ach-clip-a)">
-      <rect width="700" height="250" fill="#190B12"/>
+      <rect width="700" height="250" fill="#0A2226"/>
       <rect width="700" height="250" fill="url(#ach-glow-a)"/>
-      <text class="ach-serif" x="684" y="124" text-anchor="end" font-size="128" font-weight="300" letter-spacing="-6" fill="url(#ach-outline)">GRiD 7.0</text>
+      <text class="ach-serif" x="684" y="124" text-anchor="end" font-size="110" font-weight="300" letter-spacing="-4" fill="url(#ach-outline)">RIPPLE</text>
       <rect x="-300" y="0" width="260" height="250" fill="url(#ach-sheen)" transform="skewX(-18)">
         <animate attributeName="x" values="-300;900;900" keyTimes="0;.35;1" dur="9s" begin="2s" repeatCount="indefinite"/>
       </rect>
     </g>
-    <rect x=".5" y=".5" width="699" height="249" rx="15.5" fill="none" stroke="#C77B9B" stroke-opacity=".38"/>
+    <rect x=".5" y=".5" width="699" height="249" rx="15.5" fill="none" stroke="#2DD4BF" stroke-opacity=".38"/>
     <rect class="ach-trace-a" x=".5" y=".5" width="699" height="249" rx="15.5" fill="none" stroke="url(#ach-trace)" stroke-width="1.8" stroke-linecap="round"/>
     <rect x="40" y="0" width="300" height="1" fill="url(#ach-hair)"/>
-    <text class="ach-mono" x="36" y="154" font-size="12" letter-spacing="2.6" fill="#C77B9B">FLIPKART · ENGINEERING CHALLENGE</text>
-    <text class="ach-serif" x="34" y="204" font-size="46" font-weight="300" letter-spacing="-1" fill="#F8F0F3">National Semi-Finalist</text>
-    <text class="ach-sans" x="36" y="230" font-size="14" fill="#B6A3AC">Flipkart GRiD 7.0</text>
+    <text class="ach-mono" x="36" y="154" font-size="12" letter-spacing="2.6" fill="#2DD4BF">RIPPLE · GLOBAL HACKATHON</text>
+    <text class="ach-serif" x="34" y="204" font-size="46" font-weight="300" letter-spacing="-1" fill="#F0FDFA">Semi-Finalist</text>
+    <text class="ach-sans" x="36" y="230" font-size="14" fill="#71A8A4">Ripple XRP Ledger Engineering &amp; Distributed Challenge</text>
   </g></g>
 
-  <!-- Myntra WeForShe HackerRamp 2026 -->
+  <!-- OpenClaw — secondary hero card -->
   <g class="ach-in a2"><g transform="translate(700 24)">
     <g transform="translate(24 0)">
       <g clip-path="url(#ach-clip-b)">
-        <rect width="476" height="250" fill="#190B12"/>
+        <rect width="476" height="250" fill="#0A2226"/>
         <rect width="476" height="250" fill="url(#ach-glow-b)"/>
-        <text class="ach-serif" x="490" y="132" text-anchor="end" font-size="160" font-style="italic" font-weight="300" letter-spacing="-6" fill="none" stroke="#E5B5C7" stroke-opacity=".3">100</text>
+        <text class="ach-serif" x="490" y="132" text-anchor="end" font-size="130" font-style="italic" font-weight="300" letter-spacing="-5" fill="none" stroke="#5EEAD4" stroke-opacity=".25">CLAW</text>
       </g>
-      <rect x=".5" y=".5" width="475" height="249" rx="15.5" fill="none" stroke="#C77B9B" stroke-opacity=".3"/>
+      <rect x=".5" y=".5" width="475" height="249" rx="15.5" fill="none" stroke="#2DD4BF" stroke-opacity=".3"/>
       <rect class="ach-trace-b" x=".5" y=".5" width="475" height="249" rx="15.5" fill="none" stroke="url(#ach-trace)" stroke-width="1.8" stroke-linecap="round"/>
       <rect x="40" y="0" width="220" height="1" fill="url(#ach-hair)"/>
-      <text class="ach-mono" x="32" y="154" font-size="12" letter-spacing="2.6" fill="#C77B9B">MYNTRA · WEFORSHE HACKERRAMP 2026</text>
-      <text class="ach-serif" x="30" y="204" font-size="46" font-weight="300" letter-spacing="-1" fill="#F8F0F3">Top 100 Team</text>
-      <text class="ach-sans" x="32" y="230" font-size="14" fill="#B6A3AC">StarCloset — explainable AI fashion assistant</text>
+      <text class="ach-mono" x="32" y="154" font-size="12" letter-spacing="2.6" fill="#2DD4BF">OPEN SOURCE · ARCHITECTURE</text>
+      <text class="ach-serif" x="30" y="204" font-size="44" font-weight="300" letter-spacing="-1" fill="#F0FDFA">Major Contributor</text>
+      <text class="ach-sans" x="32" y="230" font-size="14" fill="#71A8A4">OpenClaw — Core architecture &amp; high-performance systems</text>
     </g>
   </g></g>
 
   <!-- Animated connector across the score strip -->
-  <path class="ach-draw" d="M24 300 H1176" stroke="#C77B9B" stroke-opacity=".35"/>
+  <path class="ach-draw" d="M24 300 H1176" stroke="#2DD4BF" stroke-opacity=".35"/>
 
   <!-- Score strip -->
-  <g class="ach-in a3 ach-sans" font-size="13" fill="#B6A3AC">
+  <g class="ach-in a3 ach-sans" font-size="13" fill="#71A8A4">
     <g transform="translate(36 300)">
-      <circle cx="0" cy="0" r="3.5" fill="#E5B5C7"/>
-      <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#C77B9B">ACADEMICS</text>
-      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#F8F0F3">9.10</text>
-      <text y="102">CGPA · B.Tech AI &amp; ML</text>
+      <circle cx="0" cy="0" r="3.5" fill="#5EEAD4"/>
+      <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#2DD4BF">NPTEL CERTIFICATION</text>
+      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#F0FDFA">96%</text>
+      <text y="102">DSA in Python · Elite Top Rank</text>
     </g>
     <g transform="translate(266 300)">
-      <circle cx="0" cy="0" r="3.5" fill="#E5B5C7"/>
-      <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#C77B9B">LEETCODE</text>
-      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#F8F0F3">400+</text>
-      <text y="102">peak contest rating 1321</text>
+      <circle cx="0" cy="0" r="3.5" fill="#5EEAD4"/>
+      <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#2DD4BF">HIANIME SCALE</text>
+      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#F0FDFA">100M+</text>
+      <text y="102">Streaming Sessions Peaked #1</text>
     </g>
     <g transform="translate(496 300)">
-      <circle cx="0" cy="0" r="3.5" fill="#E5B5C7"/>
-      <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#C77B9B">GEEKSFORGEEKS</text>
-      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#F8F0F3">400+</text>
-      <text y="102">score 950 · rating 1464</text>
+      <circle cx="0" cy="0" r="3.5" fill="#5EEAD4"/>
+      <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#2DD4BF">BITCHORD REACH</text>
+      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#F0FDFA">10L+</text>
+      <text y="102">1M+ Active Lossless Audio Users</text>
     </g>
     <g transform="translate(726 300)">
-      <circle cx="0" cy="0" r="3.5" fill="#E5B5C7"/>
-      <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#C77B9B">CODECHEF</text>
-      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#F8F0F3">415+</text>
-      <text y="102">problems solved</text>
+      <circle cx="0" cy="0" r="3.5" fill="#5EEAD4"/>
+      <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#2DD4BF">LANGUAGES</text>
+      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#F0FDFA">5+</text>
+      <text y="102">Python · TypeScript · Kotlin · Java · C#</text>
     </g>
     <g transform="translate(956 300)">
-      <circle cx="0" cy="0" r="3.5" fill="#E5B5C7"/>
-      <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#C77B9B">HACKERRANK</text>
-      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#F8F0F3">5★</text>
-      <text y="102">C · Python · Java</text>
+      <circle cx="0" cy="0" r="3.5" fill="#5EEAD4"/>
+      <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#2DD4BF">FOCUS</text>
+      <text class="ach-serif" y="78" font-size="36" font-weight="300" fill="#F0FDFA">Neural ML</text>
+      <text y="102">Deep Learning &amp; Scale</text>
     </g>
   </g>
 </svg>

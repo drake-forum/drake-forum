@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Design tokens — "Burgundy After Dark"
+   Design tokens — "Dark Slate & Light Teal"
    ========================================================================== */
 
 @property --angle {
@@ -11,43 +11,44 @@
 :root {
   color-scheme: dark;
 
-  /* Palette */
-  --ink-950: #10070c;
-  --ink-900: #190b12;
-  --ink-850: #1f0d17;
-  --ink-800: #27101c;
-  --wine-700: #6e1738;
-  --wine-600: #941f4d;
-  --rose-300: #d88ca8;
-  --rose-200: #e9b9ca;
-  --ivory: #f6edf0;
-  --muted: #b7a5ae;
-  --faint: #8a7480;
-  --line: rgba(216, 140, 168, 0.16);
-  --line-strong: rgba(216, 140, 168, 0.32);
-  --brass: #c9a27a;
+  /* Palette — Luminous Dark Slate & Electric Teal */
+  --ink-950: #061316;
+  --ink-900: #0a1f24;
+  --ink-850: #0f2c33;
+  --ink-800: #143841;
+  --wine-700: #0f766e;
+  --wine-600: #14b8a6;
+  --rose-300: #2dd4bf;
+  --rose-200: #5eead4;
+  --mint-light: #99f6e4;
+  --ivory: #ffffff;
+  --muted: #a3c7c2;
+  --faint: #60918a;
+  --line: rgba(45, 212, 191, 0.22);
+  --line-strong: rgba(94, 234, 212, 0.45);
+  --brass: #5eead4;
 
   /* Semantic */
   --bg: var(--ink-950);
   --bg-2: var(--ink-900);
-  --surface: var(--ink-800);
+  --surface: var(--ink-850);
   --text: var(--ivory);
   --text-muted: var(--muted);
   --accent: var(--rose-300);
   --accent-strong: var(--wine-600);
   --focus: var(--rose-200);
 
-  /* Heatmap scale (near-black → wine → rose) */
-  --heat-0: #1c0c15;
-  --heat-1: #45122a;
-  --heat-2: #6e1738;
-  --heat-3: #a12556;
-  --heat-4: #e09ab4;
+  /* Heatmap scale (luminous dark slate → teal → electric mint) */
+  --heat-0: #0a242a;
+  --heat-1: #0d4a4e;
+  --heat-2: #0d7a7e;
+  --heat-3: #14b8a6;
+  --heat-4: #5eead4;
 
-  /* Typography */
-  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
-  --font-sans: "Geist", "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  /* Modern Engineering Typography */
+  --font-display: "Outfit", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", monospace;
 
   --step--2: clamp(0.69rem, 0.66rem + 0.12vw, 0.76rem);
   --step--1: clamp(0.8rem, 0.77rem + 0.16vw, 0.89rem);
@@ -76,8 +77,8 @@
   --radius-s: 6px;
   --radius-m: 14px;
   --radius-l: 24px;
-  --shadow-1: 0 1px 0 rgba(246, 237, 240, 0.04) inset, 0 18px 40px -24px rgba(0, 0, 0, 0.8);
-  --shadow-2: 0 1px 0 rgba(246, 237, 240, 0.06) inset, 0 40px 80px -40px rgba(110, 23, 56, 0.55);
+  --shadow-1: 0 1px 0 rgba(240, 253, 250, 0.04) inset, 0 18px 40px -24px rgba(0, 0, 0, 0.8);
+  --shadow-2: 0 1px 0 rgba(240, 253, 250, 0.06) inset, 0 40px 80px -40px rgba(13, 148, 136, 0.45);
 
   /* Motion */
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);

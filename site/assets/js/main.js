@@ -10,8 +10,8 @@ const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
 /* --------------------------------------------------------------- Intro --- */
 // Only play the opening sequence once per session.
 try {
-  if (sessionStorage.getItem("sd-intro")) document.documentElement.classList.add("no-intro");
-  sessionStorage.setItem("sd-intro", "1");
+  if (sessionStorage.getItem("dc-intro")) document.documentElement.classList.add("no-intro");
+  sessionStorage.setItem("dc-intro", "1");
 } catch { /* storage blocked — intro just plays */ }
 
 const introDelay = document.documentElement.classList.contains("no-intro") || reduceMotion.matches ? 0 : 900;

@@ -22,7 +22,7 @@ const GAP = 4;
 const STEP = CELL + GAP;
 const GRID_X = 118;
 const GRID_Y = 182;
-const LEVELS = ["#1C0C15", "#451126", "#701A3D", "#A12556", "#E5B5C7"];
+const LEVELS = ["#081E21", "#0D4A4E", "#0D7A7E", "#14B8A6", "#5EEAD4"];
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const toDate = (iso) => new Date(`${iso}T00:00:00Z`);
@@ -110,8 +110,8 @@ if (best > 1) {
   const startPos = pos(bestStart);
   const labelX = Math.min(startPos.x, W - 360);
   streakSvg = `<g class="hm-fade" style="animation-delay:2.6s">
-      <path d="M${startPos.x + CELL / 2} ${GRID_Y + 7 * STEP - 2} V ${GRID_Y + 7 * STEP + 10}" stroke="#E5B5C7" stroke-opacity=".6"/>
-      <text class="hm-mono" x="${labelX}" y="${GRID_Y + 7 * STEP + 24}" font-size="10.5" letter-spacing="1.6" fill="#E5B5C7">LONGEST STREAK · ${best} DAYS · ${fmt(toDate(days[bestStart].date)).toUpperCase()} – ${fmt(toDate(days[bestEnd].date)).toUpperCase()}</text>
+      <path d="M${startPos.x + CELL / 2} ${GRID_Y + 7 * STEP - 2} V ${GRID_Y + 7 * STEP + 10}" stroke="#5EEAD4" stroke-opacity=".7"/>
+      <text class="hm-mono" x="${labelX}" y="${GRID_Y + 7 * STEP + 24}" font-size="10.5" letter-spacing="1.6" fill="#5EEAD4">LONGEST STREAK · ${best} DAYS · ${fmt(toDate(days[bestStart].date)).toUpperCase()} – ${fmt(toDate(days[bestEnd].date)).toUpperCase()}</text>
     </g>`;
 }
 
@@ -122,11 +122,11 @@ const SEGMENTS = 9;
 const snakeSvg = Array.from({ length: SEGMENTS }, (_, k) => {
   const seg = SEGMENTS - 1 - k; // draw tail first so the head sits on top
   const size = CELL - seg * 0.9;
-  const fill = seg === 0 ? "#F8F0F3" : seg < 3 ? "#E5B5C7" : seg < 6 ? "#C77B9B" : "#A12556";
+  const fill = seg === 0 ? "#F0FDFA" : seg < 3 ? "#99F6E4" : seg < 6 ? "#2DD4BF" : "#0D9488";
   const op = (1 - seg * 0.06).toFixed(2);
   const glow = seg === 0 ? ' filter="url(#hm-glow)"' : "";
   const begin = (SNAKE_BEGIN + seg * SNAKE_DT).toFixed(3);
-  const eyes = seg === 0 ? `<circle cx="${(size / 2 - 4).toFixed(1)}" cy="-2.5" r="1.3" fill="#10070C"/><circle cx="${(size / 2 - 4).toFixed(1)}" cy="2.5" r="1.3" fill="#10070C"/>` : "";
+  const eyes = seg === 0 ? `<circle cx="${(size / 2 - 4).toFixed(1)}" cy="-2.5" r="1.3" fill="#042F2E"/><circle cx="${(size / 2 - 4).toFixed(1)}" cy="2.5" r="1.3" fill="#042F2E"/>` : "";
   return `<g opacity="0"${glow}>
       <animateMotion path="${routeD}" rotate="auto" dur="${loop.toFixed(2)}s" begin="${begin}s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;${runFrac};1"/>
       <animate attributeName="opacity" values="${op};0" keyTimes="0;${runFrac}" calcMode="discrete" dur="${loop.toFixed(2)}s" begin="${begin}s" repeatCount="indefinite"/>
@@ -158,9 +158,9 @@ const statsSvg = stats
   .map(([label, value, sub], i) => {
     const x = 610 + i * 150;
     return `<g transform="translate(${x} 58)">
-      <text class="hm-mono" font-size="10" letter-spacing="1.8" fill="#C77B9B">${label}</text>
-      <text class="hm-serif" y="44" font-size="36" font-weight="300" fill="#F8F0F3">${esc(value)}</text>
-      <text class="hm-mono" y="64" font-size="9.5" fill="#B6A3AC">${esc(sub)}</text>
+      <text class="hm-mono" font-size="10" letter-spacing="1.8" fill="#2DD4BF">${label}</text>
+      <text class="hm-serif" y="44" font-size="36" font-weight="300" fill="#F0FDFA">${esc(value)}</text>
+      <text class="hm-mono" y="64" font-size="9.5" fill="#99F6E4">${esc(sub)}</text>
     </g>`;
   })
   .join("\n    ");
@@ -173,13 +173,13 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" wid
   <desc id="hm-desc">${total} contributions from ${fmt(first)} to ${fmt(last)}: ${active} active days, longest streak ${best} days, busiest day ${peak.count} contributions on ${fmt(toDate(peak.date))}. Source: ${esc(data.method || "public GitHub contribution calendar")}, snapshot ${fetched}.</desc>
   <defs>
     <linearGradient id="hm-bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#190B12"/><stop offset="1" stop-color="#10070C"/>
+      <stop offset="0" stop-color="#081A1D"/><stop offset="1" stop-color="#040F11"/>
     </linearGradient>
     <radialGradient id="hm-light" cx="88%" cy="0%" r="70%">
-      <stop offset="0" stop-color="#701A3D" stop-opacity=".55"/><stop offset="1" stop-color="#451126" stop-opacity="0"/>
+      <stop offset="0" stop-color="#0D9488" stop-opacity=".45"/><stop offset="1" stop-color="#042F2E" stop-opacity="0"/>
     </radialGradient>
     <filter id="hm-glow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      <feGaussianBlur stdDeviation="2.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
   <style>
@@ -194,16 +194,16 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" wid
 
   <rect width="${W}" height="${H}" rx="20" fill="url(#hm-bg)"/>
   <rect width="${W}" height="${H}" rx="20" fill="url(#hm-light)"/>
-  <rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="19.5" fill="none" stroke="#C77B9B" stroke-opacity=".16"/>
+  <rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="19.5" fill="none" stroke="#2DD4BF" stroke-opacity=".22"/>
 
   <g class="hm-fade">
-    <text class="hm-mono" x="56" y="68" font-size="11" letter-spacing="2.6" fill="#C77B9B">COMMIT LOG · REAL GITHUB ACTIVITY</text>
-    <text class="hm-serif" x="54" y="110" font-size="27" font-weight="300" fill="#F8F0F3">A year of building, <tspan font-style="italic" fill="#E5B5C7">one square</tspan> at a time.</text>
+    <text class="hm-mono" x="56" y="68" font-size="11" letter-spacing="2.6" fill="#2DD4BF">COMMIT LOG · REAL GITHUB ACTIVITY</text>
+    <text class="hm-serif" x="54" y="110" font-size="27" font-weight="300" fill="#F0FDFA">A year of building, <tspan font-style="italic" fill="#5EEAD4">one square</tspan> at a time.</text>
     ${statsSvg}
   </g>
 
-  <g class="hm-mono" font-size="10.5" fill="#B6A3AC">${monthSvg}</g>
-  <g class="hm-mono" font-size="10" fill="#B6A3AC" text-anchor="end">
+  <g class="hm-mono" font-size="10.5" fill="#71A8A4">${monthSvg}</g>
+  <g class="hm-mono" font-size="10" fill="#71A8A4" text-anchor="end">
     <text x="${GRID_X - 12}" y="${GRID_Y + STEP + 11}">Mon</text>
     <text x="${GRID_X - 12}" y="${GRID_Y + 3 * STEP + 11}">Wed</text>
     <text x="${GRID_X - 12}" y="${GRID_Y + 5 * STEP + 11}">Fri</text>
@@ -220,10 +220,10 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" wid
   ${streakSvg}
 
   <g class="hm-fade">
-    <text class="hm-mono" x="56" y="382" font-size="10.5" fill="#B6A3AC">Source: public GitHub contribution calendar for @${esc(data.login)} · snapshot ${fetched} · refreshed daily</text>
-    <text class="hm-mono" x="${legendX}" y="382" font-size="10.5" fill="#B6A3AC">Less</text>
+    <text class="hm-mono" x="56" y="382" font-size="10.5" fill="#71A8A4">Source: public GitHub contribution calendar for @${esc(data.login)} · snapshot ${fetched} · refreshed daily</text>
+    <text class="hm-mono" x="${legendX}" y="382" font-size="10.5" fill="#71A8A4">Less</text>
     ${legend}
-    <text class="hm-mono" x="${legendX + 36 + 5 * 18 + 4}" y="382" font-size="10.5" fill="#B6A3AC">More</text>
+    <text class="hm-mono" x="${legendX + 36 + 5 * 18 + 4}" y="382" font-size="10.5" fill="#71A8A4">More</text>
   </g>
 </svg>
 `;

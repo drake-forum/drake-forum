@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-labelledby="tc-title tc-desc">
-  <title id="tc-title">Tech stack</title>
-  <desc id="tc-desc">Languages: Java (primary), Python, C, C++. Frontend: React, JavaScript, HTML, CSS. Backend and APIs: Node.js, Express.js, REST APIs, Microservices, JWT auth. AI, ML and LLM: LLMs, NLP, Machine Learning, Deep Learning. Data and infrastructure: PostgreSQL, MongoDB, MySQL, Docker, Docker Compose, AWS. Tools: Git, GitHub, Postman.</desc>
+  <title id="tc-title">Tech stack — Devansh Chaturvedi</title>
+  <desc id="tc-desc">Languages: Python, Kotlin, TypeScript, Java, C#. Neural &amp; AI/ML: Neural Networks, Deep Learning, Model Optimization. Frontend: React, Tailwind CSS, JavaScript. Backend: Node.js, REST APIs, JWT, Microservices. Data &amp; Infra: PostgreSQL, SQLite, Docker. Tools: System Design, UI/UX, Git, GitHub.</desc>
   <defs>
     <linearGradient id="tc-bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#190B12"/><stop offset="1" stop-color="#10070C"/>
+      <stop offset="0" stop-color="#081A1D"/><stop offset="1" stop-color="#040F11"/>
     </linearGradient>
     <radialGradient id="tc-glow" cx="50%" cy="50%" r="60%">
-      <stop offset="0" stop-color="#451126" stop-opacity=".9"/><stop offset="1" stop-color="#451126" stop-opacity="0"/>
+      <stop offset="0" stop-color="#0D9488" stop-opacity=".4"/><stop offset="1" stop-color="#081A1D" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="tc-pulse">
-      <stop offset="0" stop-color="#F8F0F3"/><stop offset=".5" stop-color="#E5B5C7" stop-opacity=".6"/><stop offset="1" stop-color="#C77B9B" stop-opacity="0"/>
+      <stop offset="0" stop-color="#F0FDFA"/><stop offset=".5" stop-color="#5EEAD4" stop-opacity=".7"/><stop offset="1" stop-color="#0D9488" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="tc-trace" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#F8F0F3"/><stop offset=".45" stop-color="#E5B5C7"/><stop offset="1" stop-color="#C77B9B" stop-opacity="0"/>
+      <stop offset="0" stop-color="#F0FDFA"/><stop offset=".45" stop-color="#5EEAD4"/><stop offset="1" stop-color="#0D9488" stop-opacity="0"/>
     </linearGradient>
   </defs>
   <style>
@@ -35,70 +35,70 @@
 
   <rect width="1200" height="500" rx="20" fill="url(#tc-bg)"/>
   <rect width="1200" height="500" rx="20" fill="url(#tc-glow)"/>
-  <rect x=".5" y=".5" width="1199" height="499" rx="19.5" fill="none" stroke="#C77B9B" stroke-opacity=".16"/>
+  <rect x=".5" y=".5" width="1199" height="499" rx="19.5" fill="none" stroke="#2DD4BF" stroke-opacity=".22"/>
 
   <!-- Constellation: gutters linking the six groups -->
-  <path class="tc-web" d="M24 250 H1176 M406 24 V476 M794 24 V476" fill="none" stroke="#C77B9B" stroke-opacity=".22"/>
+  <path class="tc-web" d="M24 250 H1176 M406 24 V476 M794 24 V476" fill="none" stroke="#2DD4BF" stroke-opacity=".22"/>
   <circle cx="0" cy="250" r="8" fill="url(#tc-pulse)" opacity="0">
     <animate attributeName="cx" values="24;1176" dur="9s" begin="3s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .55 1"/>
     <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.9;1" dur="9s" begin="3s" repeatCount="indefinite"/>
   </circle>
-  <g fill="#10070C" stroke="#E5B5C7">
+  <g fill="#051417" stroke="#5EEAD4">
     <rect x="400" y="244" width="12" height="12" transform="rotate(45 406 250)"/>
     <rect x="788" y="244" width="12" height="12" transform="rotate(45 794 250)"/>
   </g>
 
   <!-- Row 1 -->
   <g class="tc-panel tc-p1"><g transform="translate(32 32)">
-    <rect width="360" height="200" rx="14" fill="#190B12" fill-opacity=".85" stroke="#C77B9B" stroke-opacity=".22"/>
+    <rect width="360" height="200" rx="14" fill="#0A2226" fill-opacity=".9" stroke="#2DD4BF" stroke-opacity=".28"/>
     <rect class="tc-trace" style="animation-delay:0.00s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
-    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#C77B9B">01  LANGUAGES</text>
-    <text class="tc-serif" x="24" y="96" font-size="40" font-weight="300" fill="#F8F0F3">Java <tspan font-size="13" class="tc-mono" fill="#C77B9B" dy="-18">PRIMARY</tspan></text>
-    <text class="tc-serif" x="24" y="146" font-size="34" font-weight="300" fill="#F8F0F3">Python</text>
-    <text class="tc-serif" x="24" y="180" font-size="22" font-weight="300" fill="#B6A3AC">C  ·  C++</text>
+    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#2DD4BF">01  LANGUAGES</text>
+    <text class="tc-serif" x="24" y="94" font-size="36" font-weight="300" fill="#F0FDFA">Python  ·  Kotlin</text>
+    <text class="tc-serif" x="24" y="140" font-size="32" font-weight="300" fill="#F0FDFA">TypeScript</text>
+    <text class="tc-serif" x="24" y="176" font-size="22" font-weight="300" fill="#71A8A4">Java  ·  C#</text>
   </g></g>
   <g class="tc-panel tc-p2"><g transform="translate(420 32)">
-    <rect width="360" height="200" rx="14" fill="#190B12" fill-opacity=".85" stroke="#C77B9B" stroke-opacity=".22"/>
+    <rect width="360" height="200" rx="14" fill="#0A2226" fill-opacity=".9" stroke="#2DD4BF" stroke-opacity=".28"/>
     <rect class="tc-trace" style="animation-delay:-1.15s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
-    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#C77B9B">02  AI · ML · LLM</text>
-    <text class="tc-serif" x="24" y="90" font-size="30" font-weight="300" fill="#F8F0F3">LLMs  ·  NLP</text>
-    <text class="tc-serif" x="24" y="130" font-size="24" font-weight="300" fill="#F8F0F3">Machine Learning</text>
-    <text class="tc-serif" x="24" y="164" font-size="24" font-weight="300" fill="#B6A3AC">Deep Learning</text>
-    <text class="tc-mono" x="24" y="186" font-size="10" letter-spacing="1.4" fill="#B6A3AC">AWS CERTIFIED AI PRACTITIONER</text>
+    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#2DD4BF">02  NEURAL &amp; AI / ML</text>
+    <text class="tc-serif" x="24" y="90" font-size="30" font-weight="300" fill="#F0FDFA">Neural Networks</text>
+    <text class="tc-serif" x="24" y="130" font-size="24" font-weight="300" fill="#F0FDFA">Deep Learning Models</text>
+    <text class="tc-serif" x="24" y="164" font-size="22" font-weight="300" fill="#71A8A4">Model Pipelines &amp; Inference</text>
+    <text class="tc-mono" x="24" y="186" font-size="10" letter-spacing="1.4" fill="#5EEAD4">PYTORCH · PYTHON EXPERTISE</text>
   </g></g>
   <g class="tc-panel tc-p3"><g transform="translate(808 32)">
-    <rect width="360" height="200" rx="14" fill="#190B12" fill-opacity=".85" stroke="#C77B9B" stroke-opacity=".22"/>
+    <rect width="360" height="200" rx="14" fill="#0A2226" fill-opacity=".9" stroke="#2DD4BF" stroke-opacity=".28"/>
     <rect class="tc-trace" style="animation-delay:-2.30s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
-    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#C77B9B">03  FRONTEND</text>
-    <text class="tc-serif" x="24" y="96" font-size="40" font-weight="300" fill="#F8F0F3">React</text>
-    <text class="tc-serif" x="24" y="140" font-size="26" font-weight="300" fill="#F8F0F3">JavaScript</text>
-    <text class="tc-serif" x="24" y="176" font-size="22" font-weight="300" fill="#B6A3AC">HTML  ·  CSS</text>
+    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#2DD4BF">03  FRONTEND</text>
+    <text class="tc-serif" x="24" y="96" font-size="40" font-weight="300" fill="#F0FDFA">React</text>
+    <text class="tc-serif" x="24" y="140" font-size="28" font-weight="300" fill="#F0FDFA">Tailwind CSS</text>
+    <text class="tc-serif" x="24" y="176" font-size="22" font-weight="300" fill="#71A8A4">JavaScript  ·  HTML5</text>
   </g></g>
 
   <!-- Row 2 -->
   <g class="tc-panel tc-p4"><g transform="translate(32 268)">
-    <rect width="360" height="200" rx="14" fill="#190B12" fill-opacity=".85" stroke="#C77B9B" stroke-opacity=".22"/>
+    <rect width="360" height="200" rx="14" fill="#0A2226" fill-opacity=".9" stroke="#2DD4BF" stroke-opacity=".28"/>
     <rect class="tc-trace" style="animation-delay:-3.45s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
-    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#C77B9B">04  BACKEND &amp; APIS</text>
-    <text class="tc-serif" x="24" y="90" font-size="32" font-weight="300" fill="#F8F0F3">Node.js  ·  Express</text>
-    <text class="tc-serif" x="24" y="132" font-size="24" font-weight="300" fill="#F8F0F3">REST APIs  ·  Microservices</text>
-    <text class="tc-serif" x="24" y="170" font-size="22" font-weight="300" fill="#B6A3AC">JWT auth  ·  RBAC</text>
+    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#2DD4BF">04  BACKEND &amp; APIS</text>
+    <text class="tc-serif" x="24" y="90" font-size="34" font-weight="300" fill="#F0FDFA">Node.js</text>
+    <text class="tc-serif" x="24" y="132" font-size="24" font-weight="300" fill="#F0FDFA">REST APIs  ·  JWT Auth</text>
+    <text class="tc-serif" x="24" y="170" font-size="22" font-weight="300" fill="#71A8A4">Microservices Architecture</text>
   </g></g>
   <g class="tc-panel tc-p5"><g transform="translate(420 268)">
-    <rect width="360" height="200" rx="14" fill="#190B12" fill-opacity=".85" stroke="#C77B9B" stroke-opacity=".22"/>
+    <rect width="360" height="200" rx="14" fill="#0A2226" fill-opacity=".9" stroke="#2DD4BF" stroke-opacity=".28"/>
     <rect class="tc-trace" style="animation-delay:-4.60s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
-    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#C77B9B">05  DATA &amp; INFRASTRUCTURE</text>
-    <text class="tc-serif" x="24" y="90" font-size="30" font-weight="300" fill="#F8F0F3">PostgreSQL  ·  MongoDB</text>
-    <text class="tc-serif" x="24" y="130" font-size="24" font-weight="300" fill="#F8F0F3">Docker  ·  Compose  ·  AWS</text>
-    <text class="tc-serif" x="24" y="166" font-size="22" font-weight="300" fill="#B6A3AC">MySQL</text>
-    <text class="tc-mono" x="24" y="186" font-size="10" letter-spacing="1.4" fill="#B6A3AC">INDEXING · NORMALIZATION</text>
+    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#2DD4BF">05  DATA &amp; INFRASTRUCTURE</text>
+    <text class="tc-serif" x="24" y="90" font-size="30" font-weight="300" fill="#F0FDFA">PostgreSQL  ·  SQLite</text>
+    <text class="tc-serif" x="24" y="130" font-size="26" font-weight="300" fill="#F0FDFA">Docker Containerization</text>
+    <text class="tc-serif" x="24" y="166" font-size="20" font-weight="300" fill="#71A8A4">Distributed Data &amp; Caching</text>
+    <text class="tc-mono" x="24" y="186" font-size="10" letter-spacing="1.4" fill="#5EEAD4">HIGH-AVAILABILITY SCHEMA DESIGN</text>
   </g></g>
   <g class="tc-panel tc-p6"><g transform="translate(808 268)">
-    <rect width="360" height="200" rx="14" fill="#190B12" fill-opacity=".85" stroke="#C77B9B" stroke-opacity=".22"/>
+    <rect width="360" height="200" rx="14" fill="#0A2226" fill-opacity=".9" stroke="#2DD4BF" stroke-opacity=".28"/>
     <rect class="tc-trace" style="animation-delay:-5.75s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
-    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#C77B9B">06  TOOLS &amp; FUNDAMENTALS</text>
-    <text class="tc-serif" x="24" y="90" font-size="30" font-weight="300" fill="#F8F0F3">Git  ·  GitHub  ·  Postman</text>
-    <text class="tc-serif" x="24" y="130" font-size="22" font-weight="300" fill="#F8F0F3">DSA · OS · CN · DBMS · OOP</text>
-    <text class="tc-serif" x="24" y="166" font-size="22" font-weight="300" fill="#B6A3AC">Multithreading · System Design</text>
+    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#2DD4BF">06  SYSTEMS &amp; DESIGN</text>
+    <text class="tc-serif" x="24" y="90" font-size="30" font-weight="300" fill="#F0FDFA">System Design</text>
+    <text class="tc-serif" x="24" y="130" font-size="24" font-weight="300" fill="#F0FDFA">UI / UX Architecture</text>
+    <text class="tc-serif" x="24" y="166" font-size="22" font-weight="300" fill="#71A8A4">Git  ·  GitHub  ·  CI/CD</text>
   </g></g>
 </svg>

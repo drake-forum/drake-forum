@@ -10,14 +10,14 @@
  * If both fail, the existing snapshot is left untouched and the script
  * exits 0 so a deploy never breaks because of a network hiccup.
  *
- * Env: GH_USERNAME (default Sushmitadasari), GH_TOKEN (optional),
+ * Env: GH_USERNAME (default Drake-Forum), GH_TOKEN (optional),
  *      OUTPUT_PATH (default site/data/contributions.json)
  */
 
 import fs from "node:fs";
 import path from "node:path";
 
-const LOGIN = process.env.GH_USERNAME || "Sushmitadasari";
+const LOGIN = process.env.GH_USERNAME || "Drake-Forum";
 const TOKEN = process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
 const OUTPUT = process.env.OUTPUT_PATH || "site/data/contributions.json";
 

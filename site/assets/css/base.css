@@ -51,7 +51,7 @@
 
   ::selection { background: var(--wine-600); color: var(--ivory); }
 
-  h1, h2, h3 { font-weight: 400; line-height: 1.05; text-wrap: balance; }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.08; text-wrap: balance; letter-spacing: -0.03em; }
   p { text-wrap: pretty; }
 
   a { color: inherit; text-decoration: none; }
@@ -113,7 +113,7 @@
   }
 
   .serif { font-family: var(--font-display); }
-  .italic { font-style: italic; font-variation-settings: "SOFT" 100, "WONK" 1; }
+  .italic { font-style: normal; font-weight: 800; }
 
   /* --- Section heading pattern ------------------------------------------ */
   .section { position: relative; padding-block: var(--space-3xl); }
@@ -137,14 +137,18 @@
   .section-title {
     font-family: var(--font-display);
     font-size: var(--step-4);
-    font-weight: 300;
-    font-variation-settings: "opsz" 144, "SOFT" 30;
-    letter-spacing: -0.03em;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 1.1;
   }
   .section-title em {
-    font-style: italic;
-    color: var(--rose-200);
-    font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+    font-style: normal;
+    font-weight: 800;
+    background: linear-gradient(135deg, #5eead4 20%, #2dd4bf 70%, #14b8a6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 16px rgba(45, 212, 191, 0.4));
   }
   .section-lede { color: var(--text-muted); max-width: var(--measure); font-size: var(--step-1); line-height: 1.55; }
 
@@ -174,14 +178,14 @@
   .btn svg { width: 1.05em; height: 1.05em; flex: none; transition: transform var(--dur-2) var(--ease-out); }
   .btn:hover svg.arrow { transform: translateX(3px); }
 
-  /* Primary: wine core with a rotating conic rim */
+  /* Primary: teal core with a rotating conic rim */
   .btn--primary {
     color: var(--ivory);
     background:
       linear-gradient(var(--wine-700), var(--wine-700)) padding-box,
       conic-gradient(from var(--angle), var(--wine-600), var(--rose-300), var(--wine-700) 40%, var(--wine-600) 70%, var(--rose-300)) border-box;
     border: 1px solid transparent;
-    box-shadow: 0 10px 40px -12px rgba(148, 31, 77, 0.8);
+    box-shadow: 0 10px 40px -12px rgba(13, 148, 136, 0.5);
     animation: spin-angle 6s linear infinite;
   }
   .btn--primary::before {
@@ -190,7 +194,7 @@
     inset: 0;
     z-index: -1;
     border-radius: inherit;
-    background: radial-gradient(120% 140% at var(--bx, 50%) 120%, rgba(216, 140, 168, 0.45), transparent 60%);
+    background: radial-gradient(120% 140% at var(--bx, 50%) 120%, rgba(45, 212, 191, 0.45), transparent 60%);
     opacity: 0;
     transition: opacity var(--dur-2) var(--ease-out);
   }
@@ -199,9 +203,9 @@
   .btn--ghost {
     color: var(--ivory);
     border: 1px solid var(--line-strong);
-    background: rgba(39, 16, 28, 0.35);
+    background: rgba(8, 26, 29, 0.65);
   }
-  .btn--ghost:hover { background: rgba(110, 23, 56, 0.3); border-color: rgba(216, 140, 168, 0.5); }
+  .btn--ghost:hover { background: rgba(13, 74, 78, 0.45); border-color: rgba(45, 212, 191, 0.5); }
 
   .btn--small { min-height: 2.4rem; padding: 0.5rem 1rem; }
 
@@ -223,17 +227,17 @@
     border: 1px solid var(--line);
     border-radius: 999px;
     color: var(--rose-200);
-    background: rgba(39, 16, 28, 0.6);
+    background: rgba(8, 26, 29, 0.75);
   }
 
   /* Glass — used sparingly (nav, tooltip, a couple of chips) */
   .glass {
-    background: rgba(25, 11, 18, 0.72);
+    background: rgba(4, 15, 17, 0.82);
     border: 1px solid var(--line);
   }
   @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
     .glass {
-      background: rgba(25, 11, 18, 0.55);
+      background: rgba(4, 15, 17, 0.65);
       -webkit-backdrop-filter: blur(14px) saturate(140%);
       backdrop-filter: blur(14px) saturate(140%);
     }
@@ -285,9 +289,9 @@
 
 @keyframes spin-angle { to { --angle: 360deg; } }
 @keyframes pulse-dot {
-  0% { box-shadow: 0 0 0 0 rgba(216, 140, 168, 0.55); }
-  70% { box-shadow: 0 0 0 10px rgba(216, 140, 168, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(216, 140, 168, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(45, 212, 191, 0.6); }
+  70% { box-shadow: 0 0 0 10px rgba(45, 212, 191, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(45, 212, 191, 0); }
 }
 @keyframes drift {
   0%, 100% { transform: translate3d(0, 0, 0) scale(1); }

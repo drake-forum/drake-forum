@@ -30,9 +30,9 @@ const JET_X_START = 35;
 const JET_X_END = 478;
 const LOOP_DUR = 20; // seconds, one full there-and-back pass
 const MAX_TARGETS = 12; // how many "busiest" days the jet fires on
-const FLASH_COLOR = "#39d353";
-const BULLET_COLOR = "#7ee787";
-const BLAST_COLOR = "#56d364";
+const FLASH_COLOR = "#5eead4";
+const BULLET_COLOR = "#99f6e4";
+const BLAST_COLOR = "#2dd4bf";
 const PAD_Y = 128; // where bullets launch from (just under the grid)
 
 if (!USERNAME) {
@@ -92,6 +92,14 @@ function buildCells(weeks) {
     })),
   })).concat(recent);
 
+  function getTealColor(count) {
+    if (!count || count === 0) return "#081E21";
+    if (count <= 2) return "#0D4A4E";
+    if (count <= 5) return "#0D7A7E";
+    if (count <= 9) return "#14B8A6";
+    return "#5EEAD4";
+  }
+
   const cells = [];
   padded.forEach((week, col) => {
     week.contributionDays.forEach((day, row) => {
@@ -100,7 +108,7 @@ function buildCells(weeks) {
         row,
         x: GRID_X + col * STEP,
         y: GRID_Y + row * STEP,
-        color: day.color || "#161b22",
+        color: getTealColor(day.contributionCount),
         count: day.contributionCount || 0,
         date: day.date,
       });
@@ -193,18 +201,18 @@ function buildStars() {
     [30, 164, 1.2], [483, 164, 1.6],
   ];
   return pts.map(([x, y, dur]) =>
-    `<circle cx="${x}" cy="${y}" r="1.1" fill="#8b949e"><animate attributeName="opacity" values="0.2;1;0.2" dur="${dur}s" repeatCount="indefinite"/></circle>`
+    `<circle cx="${x}" cy="${y}" r="1.1" fill="#2DD4BF"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="${dur}s" repeatCount="indefinite"/></circle>`
   ).join("\n");
 }
 
 function buildJet() {
   return `<g id="jet">
   <g transform="translate(0,0)">
-    <polygon points="0,-16 8,6 4,3 -4,3 -8,6" fill="#58a6ff" stroke="#1f6feb" stroke-width="1"/>
-    <polygon points="-8,6 -14,12 -4,7" fill="#388bfd"/>
-    <polygon points="8,6 14,12 4,7" fill="#388bfd"/>
-    <circle cx="0" cy="-6" r="2.2" fill="#c9e6ff"/>
-    <polygon points="-3,7 3,7 0,15" fill="#f0883e">
+    <polygon points="0,-16 8,6 4,3 -4,3 -8,6" fill="#14B8A6" stroke="#0D9488" stroke-width="1"/>
+    <polygon points="-8,6 -14,12 -4,7" fill="#0F766E"/>
+    <polygon points="8,6 14,12 4,7" fill="#0F766E"/>
+    <circle cx="0" cy="-6" r="2.2" fill="#F0FDFA"/>
+    <polygon points="-3,7 3,7 0,15" fill="#5EEAD4">
       <animate attributeName="opacity" values="0.5;1;0.6;1" dur="0.18s" repeatCount="indefinite"/>
     </polygon>
   </g>
@@ -221,7 +229,8 @@ function buildSvg(weeks) {
   const { bullets, blasts } = buildBulletsAndBlasts(targets);
 
   return `<svg viewBox="0 0 ${WIDTH} ${HEIGHT}" xmlns="http://www.w3.org/2000/svg">
-<rect x="0" y="0" width="${WIDTH}" height="${HEIGHT}" fill="#0d1117"/>
+<rect x="0" y="0" width="${WIDTH}" height="${HEIGHT}" fill="#081A1D"/>
+<rect x="0.5" y="0.5" width="${WIDTH - 1}" height="${HEIGHT - 1}" rx="8" fill="none" stroke="#2DD4BF" stroke-opacity="0.2"/>
 ${buildStars()}
 <g id="grid">
 ${buildGrid(cells, targets)}</g>
