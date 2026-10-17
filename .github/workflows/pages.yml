@@ -3,10 +3,6 @@ name: Deploy portfolio to GitHub Pages
 on:
   push:
     branches: [main]
-    paths:
-      - "site/**"
-      - "scripts/fetch-contributions.mjs"
-      - ".github/workflows/pages.yml"
   schedule:
     # Refresh the contribution heatmap once a day (06:00 UTC)
     - cron: "0 6 * * *"
